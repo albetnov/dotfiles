@@ -273,7 +273,7 @@ return {
             { action = builtin.oldfiles, desc = ' Recent files', icon = ' ', key = 'r' },
             {
               action = function()
-                require('persistence').load { last = true }
+                require('persistence').load()
               end,
               desc = ' Restore session',
               icon = ' ',
