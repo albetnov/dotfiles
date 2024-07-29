@@ -1,6 +1,7 @@
 require 'settings'
 require 'keymaps'
 require 'cmd'
+require 'workspace'
 
 -- AutoCMD
 vim.api.nvim_create_autocmd('TextYankPost', {

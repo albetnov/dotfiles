@@ -163,3 +163,13 @@ typeset -g POWERLEVEL9K_INSTANT_PROMPT=quiet
 # Launcher SYNC
 export LAUNCHERSYNCPATH="$HOME/Tools/launcher-sync"
 alias launcher-sync="sudo $LAUNCHERSYNCPATH/launcher-sync"
+
+# Local Binary
+PATH_BIN="$HOME/.local/bin"
+export PATH="$PATH_BIN:$PATH"
+
+# Flutter
+export PATH="$PATH_BIN/flutter/bin:$PATH"
+export ANDROID_HOME="$HOME/Android/Sdk"
+export PATH="$ANDROID_HOME/cmdline-tools/latest/bin:$PATH"
+export CHROME_EXECUTABLE="chromium-browser"

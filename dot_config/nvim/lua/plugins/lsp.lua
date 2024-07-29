@@ -247,7 +247,7 @@ return {
           return
         end
 
-        lint.try_lint()
+        lint.try_lint(nil, { ignore_errors = true })
       end
 
       vim.api.nvim_create_autocmd({ 'BufEnter', 'BufWritePost', 'InsertLeave' }, {

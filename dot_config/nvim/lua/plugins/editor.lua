@@ -7,6 +7,9 @@ return {
     'tpope/vim-sleuth',
     event = 'BufRead',
     lazy = true,
+    enabled = function()
+      return not vim.g.disable_sleuth
+    end,
   },
 
   { -- Autoformat
@@ -122,7 +125,14 @@ return {
     end,
   },
 
-  { 'github/copilot.vim', event = 'BufReadPre', lazy = true },
+  {
+    'github/copilot.vim',
+    event = 'BufReadPre',
+    lazy = true,
+    enabled = function()
+      return not vim.g.disable_copilot
+    end,
+  },
 
   {
     'folke/persistence.nvim',
