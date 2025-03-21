@@ -47,7 +47,7 @@ font-style = "Medium"
 
 theme = "carbonfox"
 
-window-decoration = false
+window-decoration = none
 window-padding-x = 0
 window-padding-y = 0
 
