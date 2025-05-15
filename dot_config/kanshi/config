@@ -1,0 +1,36 @@
+# Profile for when both monitors are connected (your desired default)
+profile {
+    # This profile matches when BOTH HDMI-A-1 and eDP-1 are connected and enabled.
+    # By listing them here and setting them to 'enable', kanshi will only
+    # apply this profile if both are detected.
+    output HDMI-A-1 enable position 0,0
+    output eDP-1 enable position 1920,0 scale 1.25
+
+    # Configure the positions for this layout (HDMI-A-1 left, eDP-1 right)
+    # output HDMI-A-1 position 0,0
+    # output eDP-1 position 1080,0
+    # output eDP-1 scale 1.25
+
+    # You can also add mode and scale here if needed, e.g.:
+    # output HDMI-A-1 mode 2560x1440@60Hz
+    # output eDP-1 mode 1920x1080@60Hz
+}
+
+# Profile for when only the laptop screen (eDP-1) is connected
+profile {
+    # This profile matches when only eDP-1 is connected and enabled.
+    # Since the previous profile requires both, this one will match
+    # when HDMI-A-1 is NOT detected.
+    output eDP-1 enable scale 1.25
+
+    # Ensure other outputs are disabled in this profile
+    # output HDMI-A-1 disable
+    # Add other potential external outputs and set to disable
+    # output DisplayPort-1 disable
+
+    # You can also add mode and scale here if needed, e.g.:
+    # output eDP-1 mode 1920x1080@60Hz
+}
+
+# You can add other profiles for different combinations of monitors if you have them.
+# The order of profiles in the file matters - kanshi applies the first one that matches.
