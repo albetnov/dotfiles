@@ -125,9 +125,10 @@ alias minio="MINIO_ROOT_USER=albet MINIO_ROOT_PASSWORD=albetminio $HOME/Tools/mi
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
+source ~/.p10k_phpvm.zsh
 
 # Go Bin
-export PATH="$GOPATH/go/bin:$PATH"
+export PATH="$HOME/go/bin:$PATH"
 
 # DynamoDB
 #export DYNAMOPATH="$HOME/Tools/DynamoDBWorkbench/DDBLocal" 
@@ -193,14 +194,5 @@ export VCPKG_ROOT="/home/albetnv/Tools/vcpkg"
 export PATH="$VCPKG_ROOT:$PATH"
 
 # PHPVM
-PHPVM_PATH="/home/albetnv/Tools/phpvm"
-export PATH="$PHPVM_PATH:$PATH"
+source ~/.phpvm.zsh
 
-phpvm() {
-  if [[ "$1" = "prepare" ]]
-  then
-    eval "`command phpvm prepare`"
-  else
-    command phpvm "$@"
-  fi
-}
