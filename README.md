@@ -33,7 +33,7 @@ In case I forget on how to use this config...
 
 That's all I can remember of, I am not sure if I misses some steps, but here it goes.
 
-> [1] You can also start from Fedora Sway Spin, I personally just prefer GDM. If you do start from Sway Spin you might would spent more time on adjusting rather than creating/installing
+> [1] You can also start from Fedora Sway Spin, I personally just prefer Gnome. If you do start from Sway Spin you might would spent more time on adjusting rather than creating/installing
 >
 > [2] Follow the instructions, it should suffice. Additionally, if you use GDM or SDDM that automate PAM, Gnome-keyring should work out of the box but might prompt for password when first access after boot.
 >
