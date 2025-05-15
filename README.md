@@ -14,6 +14,7 @@ In case I forget on how to use this config...
 - Run `sudo dnf group install sway-desktop-envrionment`
 - [2] Fix gnome-keyring: ["Using gnome-keyring-daemon outside desktop environments (KDE, GNOME, XFCE, ...)"](https://wiki.archlinux.org/title/GNOME/Keyring)
 - [3] Mask Gnome Portal: `systemctl --user mask xdg-desktop-portal-gnome`
+- Do steps here to ensure everything work properly [XDG Desktop Portal WLR Troubleshoots](https://github.com/emersion/xdg-desktop-portal-wlr/wiki/%22It-doesn't-work%22-Troubleshooting-Checklist)
 - Install utilities if not available: `sudo dnf install brightnessctl pactl grimshot`
 - Install ghostty:
     ```bash 
