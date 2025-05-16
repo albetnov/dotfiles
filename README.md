@@ -45,3 +45,13 @@ That's all I can remember of, I am not sure if I misses some steps, but here it 
 > [5] I chose hyprland utilities for locking and idling just because they look more aesthethic in my opinion, if you aim for simpler then `swayidle` and `swaylock` already enough. If you choose to go with hyprland utilities as well, then both swayidle and swaylock can be optionally removed.
 >
 > [6] I chose this notification daemon because it did more than just showing notification. However, it lacks customization. You can choose dunst or mako for alternative.
+
+## About Tools
+
+I bundled some tools for wayland-related issues and other stuff.
+
+- set-wayland-flag.sh: A script that expose a function that takes file name of a `.desktop` file located in `/usr/share/applications/$1.desktop`. The function will alter the target file by adding wayland ozone flags. This function should work for most electron apps too
+- [1] `fix-vscode-wayland.sh` and `fix-chromium-wayland.sh` uses the above script to adjust `code.desktop` and `chromium.desktop`
+- `update-vscode-fedora.sh` automatically check for updates (dnf is often lags behind), download, install the update, and apply `fix-vscode-wayland.sh`
+
+> [1] The fixes did not applied for launching from command line. You can consider adding `alias` yourself.
