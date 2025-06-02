@@ -54,7 +54,7 @@ fi
 
 # This endpoint returns information about the latest release of the microsoft/vscode repository
 API_URL="https://api.github.com/repos/microsoft/vscode/releases/latest"
-DOWNLOAD_DIR="~/Downloads/vscode" # Use a variable name that indicates it's a directory
+DOWNLOAD_DIR="$HOME/Downloads/vscode" # Use a variable name that indicates it's a directory
 DOWNLOAD_FILENAME="vscode_latest.rpm" # Specify a filename for the download
 DOWNLOAD_PATH="$DOWNLOAD_DIR/$DOWNLOAD_FILENAME" # Combine directory and filename
 

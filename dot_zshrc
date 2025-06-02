@@ -196,3 +196,5 @@ export PATH="$VCPKG_ROOT:$PATH"
 # PHPVM
 source ~/.phpvm.zsh
 
+# adb shortcut
+alias apo="adb shell input keyevent 26"
