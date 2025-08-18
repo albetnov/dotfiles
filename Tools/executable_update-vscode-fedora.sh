@@ -123,13 +123,14 @@ if [ "$SHOULD_INSTALL" = true ]; then
 
     echo "VS Code installation complete."
 
-    # Execute the fix-vscode-wayland.sh script if it exists.
-    if [ -f "./fix-vscode-wayland.sh" ]; then
-        echo "Applying Wayland fix..."
-        . ./fix-vscode-wayland.sh
-    else
-        echo "Warning: fix-vscode-wayland.sh not found in the current directory."
-    fi
+    # # Execute the fix-vscode-wayland.sh script if it exists.
+    # (using config)
+    # if [ -f "./fix-vscode-wayland.sh" ]; then
+    #     echo "Applying Wayland fix..."
+    #     . ./fix-vscode-wayland.sh
+    # else
+    #     echo "Warning: fix-vscode-wayland.sh not found in the current directory."
+    # fi
 else
     # If not installing, print message.
     echo "Skipping installation as per user request (--no-install)."
