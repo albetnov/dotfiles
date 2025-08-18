@@ -60,6 +60,11 @@ output * bg ~/.config/sway/wallpaper.png fill
 # use hyprlock instead, more beautiful
 exec hypridle
 
+# configure desktop variables
+exec dbus-update-activation-environment --systemd WAYLAND_DISPLAY DISPLAY SWAYSOCK XDG_CURRENT_DESKTOP=sway XDG_SESSION_DESKTOP=sway
+exec dbus-update-activation-environment --systemd DBUS_SESSION_BUS_ADDRESS DISPLAY XAUTHORITY
+exec systemctl --user import-environment XDG_CURRENT_DESKTOP
+
 ### Input configuration
 #
 # Example configuration:

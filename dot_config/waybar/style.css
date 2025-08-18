@@ -71,7 +71,8 @@ window#waybar.hidden {
 #clock,
 #tray,
 #language,
-#custom-power {
+#custom-power,
+#custom-notification {
   border-radius: 10px; /* Slightly smaller radius */
   margin: 4px 3px;    /* Reduced margin */
   padding: 5px 12px;  /* Reduced padding */
@@ -152,4 +153,10 @@ tooltip label {
   padding: 4px; /* Reduced */
   background-color: transparent;
   color: #E0F2FE;
+}
+
+#custom-notification {
+  padding: 0 12px;
+  background-color: #dbcaac;
+  color: #6b3f35;
 }

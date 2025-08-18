@@ -1,11 +1,14 @@
 #!/bin/bash
 
+REQUIRE_SUDO=1
+ICON_BASE_DIR="/usr/share/applications"
+
 # usage set_wayland_flag(string binary_name, string label)
 function set_wayland_flag {
   # Script to automatically apply Wayland flags to the VS Code desktop entry
   # Run this script with sudo after updating Visual Studio Code.
 
-  TARGET="/usr/share/applications/$1.desktop"
+  TARGET="$ICON_BASE_DIR/$1.desktop"
   # You can change this flag if you prefer:
   WAYLAND_FLAG="--enable-features=UseOzonePlatform --ozone-platform=wayland"
 
@@ -31,7 +34,11 @@ function set_wayland_flag {
   #      this command matches the end of the line ($) and appends the flag.
   # - The '-i' flag tells sed to edit the file in-place.
   # - We need sudo because the file is in /usr/share/applications.
-  sudo sed -i "/^Exec=/ { s/\\(%U\\)\$/ ${WAYLAND_FLAG} \\1/; t; s/\$/ ${WAYLAND_FLAG}/ }" "$TARGET"
+  if [ $REQUIRE_SUDO -eq 1 ]; then
+    sudo sed -i "/^Exec=/ { s/\\(%U\\)\$/ ${WAYLAND_FLAG} \\1/; t; s/\$/ ${WAYLAND_FLAG}/ }" "$TARGET"
+  else
+    sed -i "/^Exec=/ { s/\\(%U\\)\$/ ${WAYLAND_FLAG} \\1/; t; s/\$/ ${WAYLAND_FLAG}/ }" "$TARGET"
+  fi
 
   # Check the exit status of the sed command
   if [ $? -eq 0 ]; then
