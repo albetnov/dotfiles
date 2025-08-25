@@ -5,6 +5,17 @@ source "$HOME/.antidote/antidote.zsh"
 
 antidote load
 
+HISTSIZE=10000
+SAVEHIST=10000
+export HISTFILE="$HOME/.zsh_history"
+
+# Enable history
+setopt append_history
+setopt inc_append_history
+setopt extended_history
+
+source "$HOME/.keybindings.zsh"
+
 # Brew
 eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
 
@@ -91,6 +102,15 @@ alias tap="tmux a -t personal"
 
 alias npx="bunx"
 alias npm="bun"
+
+# vscode wayland (stupid fix)
+function code() {
+  if [ -z "$@" ]; then
+    command code --ozone-platform=wayland
+  else
+    command code "$@"
+  fi
+}
 
 # Starship
 eval "$(starship init zsh)"
