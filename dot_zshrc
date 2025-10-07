@@ -91,9 +91,7 @@ export PATH="$VCPKG_ROOT:$PATH"
 source ~/.phpvm.zsh
 
 # adb shortcut
-alias apo="adb shell input keyevent 26"
-alias usbc="$HOME/Tools/usb-toggle.sh enable"
-alias usbd="$HOME/Tools/usb-toggle.sh disable"
+alias dvp="adb shell input keyevent KEYCODE_POWER"
 
 alias tw="tmux new -s work"
 alias tp="tmux new -s personal"
@@ -108,7 +106,7 @@ function code() {
   if [ -z "$@" ]; then
     command code --ozone-platform=wayland
   else
-    command code "$@"
+    command code "$@" --ozone-platform=wayland
   fi
 }
 
