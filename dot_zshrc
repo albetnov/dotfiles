@@ -101,6 +101,10 @@ alias tap="tmux a -t personal"
 alias npx="bunx"
 alias npm="bun"
 
+alias now="date +\"%Y-%m-%d_%H-%M-%S\""
+# compile c with checks (ccc, lmao)
+alias ccc='gcc -g -fsanitize=address,undefined -Wall -Wextra -Werror -O1'
+
 # vscode wayland (stupid fix)
 function code() {
   if [ -z "$@" ]; then
