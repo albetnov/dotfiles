@@ -16,9 +16,6 @@ setopt extended_history
 
 source "$HOME/.keybindings.zsh"
 
-# Brew
-eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
-
 # bun completions
 [ -s "/home/albetnv/.bun/_bun" ] && source "/home/albetnv/.bun/_bun"
 
@@ -67,6 +64,7 @@ export ANDROID_HOME="$HOME/Android/Sdk"
 export PATH="$ANDROID_HOME/cmdline-tools/latest/bin:$PATH"
 export PATH="$ANDROID_HOME/platform-tools:$PATH"
 export CHROME_EXECUTABLE="chromium-browser"
+export PATH="$PATH":"$HOME/.pub-cache/bin"
 
 # fnm
 FNM_PATH="/home/albetnv/.local/share/fnm"
@@ -88,7 +86,7 @@ export VCPKG_ROOT="/home/albetnv/Tools/vcpkg"
 export PATH="$VCPKG_ROOT:$PATH"
 
 # PHPVM
-source ~/.phpvm.zsh
+source ~/.phpvm.sh
 
 # adb shortcut
 alias dvp="adb shell input keyevent KEYCODE_POWER"
@@ -116,3 +114,9 @@ function code() {
 
 # Starship
 eval "$(starship init zsh)"
+
+## [Completion]
+## Completion scripts setup. Remove the following line to uninstall
+[[ -f /home/albetnv/.dart-cli-completion/zsh-config.zsh ]] && . /home/albetnv/.dart-cli-completion/zsh-config.zsh || true
+## [/Completion]
+

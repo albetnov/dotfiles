@@ -64,9 +64,9 @@ window {
     enabled:                     true;
     margin:                      0px;
     padding:                     0px;
-    border:                      0px solid;
-    border-radius:               10px;
-    border-color:                @border-colour;
+    border:                      2px solid;
+    border-radius:               20px;
+    border-color:                @alternate-background;
     cursor:                      "default";
     /* Backgroud Colors */
     background-color:            @background-colour;
@@ -100,9 +100,9 @@ inputbar {
     margin:                      0px;
     padding:                     0px;
     border:                      0px solid;
-    border-radius:               0px;
+    border-radius:               20px;
     border-color:                @border-colour;
-    background-color:            transparent;
+    background-color:            @alternate-background;
     text-color:                  @foreground-colour;
     children:                    [ "textbox-prompt-colon", "entry" ];
 }
@@ -114,15 +114,16 @@ prompt {
 }
 textbox-prompt-colon {
     enabled:                     true;
-    padding:                     5px 0px;
+    padding:                     10px 15px;
+    border-radius:               20px;
     expand:                      false;
     str:                         "";
-    background-color:            inherit;
-    text-color:                  inherit;
+    background-color:            @selected-normal-background;
+    text-color:                  @background-colour;
 }
 entry {
     enabled:                     true;
-    padding:                     5px 0px;
+    padding:                     10px 0px 10px 10px;
     background-color:            inherit;
     text-color:                  inherit;
     cursor:                      text;
@@ -191,7 +192,7 @@ element {
     margin:                      0px;
     padding:                     10px;
     border:                      0px solid;
-    border-radius:               8px;
+    border-radius:               20px;
     border-color:                @border-colour;
     background-color:            transparent;
     text-color:                  @foreground-colour;
@@ -264,7 +265,7 @@ mode-switcher{
 button {
     padding:                     12px;
     border:                      0px solid;
-    border-radius:               8px;
+    border-radius:               20px;
     border-color:                @border-colour;
     background-color:            @alternate-background;
     text-color:                  inherit;
@@ -289,7 +290,7 @@ message {
 textbox {
     padding:                     12px;
     border:                      0px solid;
-    border-radius:               8px;
+    border-radius:               20px;
     border-color:                @border-colour;
     background-color:            @alternate-background;
     text-color:                  @foreground-colour;
@@ -303,7 +304,7 @@ textbox {
 error-message {
     padding:                     0px;
     border:                      2px solid;
-    border-radius:               8px;
+    border-radius:               20px;
     border-color:                @border-colour;
     background-color:            @background-colour;
     text-color:                  @foreground-colour;

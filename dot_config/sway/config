@@ -23,23 +23,20 @@ set $ws ~/.config/rofi/launchers/type-2/launcher.sh
 set $pa ~/.config/rofi/powermenu/type-1/powermenu.sh
 
 # border related stuff
-# A soft, pastel blue for the focused window border
-client.focused          #AEC9DE #AEC9DE #333333 #607D8B #607D8B
-# A slightly less saturated pastel blue for the focused window in an inactive workspace
-client.focused_inactive #BCCCDC #BCCCDC #333333 #90A4AE #90A4AE
-# A light, cool grey for unfocused window borders
-client.unfocused        #E0E0E0 #E0E0E0 #333333 #B0BEC5 #B0BEC5
-# A soft, desaturated red for urgent windows (can be changed)
-client.urgent           #EF9A9A #EF9A9A #333333 #FFCDD2 #FFCDD2
-# Placeholder color
-client.placeholder      #F5F5F5 #F5F5F5 #333333 #EEEEEE #EEEEEE
+# Catppuccin Mocha colors inspired by waybar styles
+# class                 border  bground text    indicator child_border
+client.focused          #89b4fa #89b4fa #1e1e2e #b4befe   #89b4fa
+client.focused_inactive #45475a #45475a #cdd6f4 #45475a   #45475a
+client.unfocused        #313244 #313244 #cdd6f4 #313244   #313244
+client.urgent           #f38ba8 #f38ba8 #1e1e2e #f38ba8   #f38ba8
+client.placeholder      #1e1e2e #1e1e2e #cdd6f4 #1e1e2e   #1e1e2e
 
 ### Output configuration
 #
 # Default wallpaper (more resolutions are available in /usr/share/backgrounds/sway/)
 # output * bg ~/.config/sway/wallpaper.png fill
 exec swww-daemon
-exec swww img ~/.config/sway/wallpaper.png
+exec swww img ~/.config/sway/wallpaper.jpg
 #
 # Example configuration:
 #
@@ -287,6 +284,10 @@ for_window [app_id="org.gnome.Calculator"] floating enable
 for_window [app_id="org.gnome.Nautilus"] floating enable
 # for_window [app_id="com.mitchellh.ghostty"] border pixel 1
 
-default_border pixel 4
+# Gaps and Borders (matching waybar floating aesthetic)
+gaps inner 6
+gaps outer 2
+default_border pixel 2
+default_floating_border pixel 2
 
 include /etc/sway/config.d/*
