@@ -119,7 +119,7 @@ get_latest_dbeaver_info() {
       select(
         type == "object" and
         (.name? | type == "string") and
-        (.name | endswith(".x86_64.rpm")) and
+        (.name | endswith("x86_64.rpm")) and
         (.name | contains("ce-"))
       ) | .browser_download_url?
     ] | map(select(. != null)) | .[0] // ""
