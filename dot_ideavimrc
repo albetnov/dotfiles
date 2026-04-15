@@ -1,0 +1,234 @@
+" ============================================================
+"  IdeaVim Configuration
+" ============================================================
+
+" --- Leader key ---
+let mapleader = " "
+
+" ============================================================
+"  SYSTEM CLIPBOARD
+" ============================================================
+" All yank, delete, and paste operations use the system clipboard.
+" This means y/d/p work seamlessly with your OS clipboard.
+set clipboard+=unnamed
+set clipboard+=unnamedplus
+
+" ============================================================
+"  CORE BEHAVIOUR
+" ============================================================
+set scrolloff=8          " Keep 8 lines visible above/below cursor
+set number               " Show line numbers
+set relativenumber       " Relative line numbers (great for motions)
+set ignorecase           " Case-insensitive search...
+set smartcase            " ...unless the query has uppercase
+set incsearch            " Incremental search highlighting
+set hlsearch             " Highlight all search matches
+set showmode             " Show current mode in status bar
+set showcmd              " Show partial commands
+set history=1000         " Remember lots of command history
+set timeoutlen=500       " Snappy leader key timeout (ms)
+set visualbell           " No annoying beeps
+
+" ============================================================
+"  IDEAVIM PLUGINS (built-in emulations)
+" ============================================================
+set surround             " cs/ds/ys — change, delete, add surrounds
+set commentary           " gc — toggle comments
+set ideamarks            " Sync IdeaVim marks with IDE bookmarks
+set argtextobj           " ia/aa — argument text objects
+set textobj-entire       " ie/ae — entire buffer text object
+set ReplaceWithRegister  " gr — replace motion with register content
+set NERDTree             " File tree via :NERDTree
+
+" Use IDE's join (J) for smart code-aware joining
+set ideajoin
+
+" Use IDE's refactor rename for the Vim 'cw' name-change
+set idearefactormode=normal
+
+" ============================================================
+"  SEARCH & NAVIGATION
+" ============================================================
+" Clear search highlights with Escape
+nnoremap <Esc> :nohlsearch<CR>
+
+" Centre screen after search jumps
+nnoremap n nzz
+nnoremap N Nzz
+
+" Centre screen after half-page jumps
+nnoremap <C-d> <C-d>zz
+nnoremap <C-u> <C-u>zz
+
+" ============================================================
+"  WINDOW / SPLIT NAVIGATION
+" ============================================================
+nnoremap <C-h> <C-w>h
+nnoremap <C-l> <C-w>l
+nnoremap <C-j> <C-w>j
+nnoremap <C-k> <C-w>k
+
+" ============================================================
+"  CLIPBOARD — EXPLICIT MAPPINGS
+" ============================================================
+" Yank to system clipboard
+nnoremap <leader>y "+y
+vnoremap <leader>y "+y
+nnoremap <leader>Y "+Y
+
+" Paste from system clipboard
+nnoremap <leader>p "+p
+nnoremap <leader>P "+P
+vnoremap <leader>p "+p
+
+" Delete without clobbering the yank register (sends to black hole)
+nnoremap <leader>d "_d
+vnoremap <leader>d "_d
+
+" Paste over selection without losing the yanked text
+vnoremap <leader>p "_dP
+
+" ============================================================
+"  EDITING QUALITY OF LIFE
+" ============================================================
+" Stay in visual mode after indenting
+vnoremap < <gv
+vnoremap > >gv
+
+" Move selected lines up/down
+vnoremap J :m '>+1<CR>gv=gv
+vnoremap K :m '<-2<CR>gv=gv
+
+" Keep cursor position when joining lines
+nnoremap J mzJ`z
+
+" Quick save
+nnoremap <leader>w :w<CR>
+
+" ============================================================
+"  IDE ACTIONS
+" ============================================================
+" Find everywhere (double shift)
+nnoremap <leader>ff :action SearchEverywhere<CR>
+
+" Recent files
+nnoremap <leader>fr :RecentFiles<CR>
+
+" Go to file
+nnoremap <leader>fg :GotoFile<CR>
+
+" File structure popup (like a minimap/outline)
+nnoremap <leader>fs :FileStructurePopup<CR>
+
+" Go to declaration / implementation
+nnoremap gd :GotoDeclaration<CR>
+nnoremap gi :GotoImplementation<CR>
+nnoremap gr :FindUsages<CR>
+nnoremap gy :GotoTypeDeclaration<CR>
+
+" Hover documentation
+nnoremap K :QuickJavaDoc<CR>
+
+" Rename refactor
+nnoremap <leader>rn :RenameElement<CR>
+
+" Quick fix / intentions
+nnoremap <leader>ca :ShowIntentionActions<CR>
+
+" Format file
+nnoremap <leader>cf :action ReformatCode<CR>
+
+" Run / Debug
+nnoremap <leader>rr :Run<CR>
+nnoremap <leader>rd :Debug<CR>
+nnoremap <leader>rs :Stop<CR>
+
+" Toggle breakpoint
+nnoremap <leader>bp :ToggleLineBreakpoint<CR>
+
+" Next / previous error
+nnoremap ]e :GotoNextError<CR>
+nnoremap [e :GotoPreviousError<CR>
+
+" Next / previous method
+nnoremap ]m :MethodDown<CR>
+nnoremap [m :MethodUp<CR>
+
+" Toggle terminal
+nnoremap <leader>t :action ActivateTerminalToolWindow<CR>
+
+" Toggle NERDTree / project view
+nnoremap <leader>e :action ActivateProjectToolWindow<CR>
+
+" Split editor
+nnoremap <leader>sv :SplitVertically<CR>
+nnoremap <leader>sh :SplitHorizontally<CR>
+
+" Close current editor tab
+nnoremap <leader>q :CloseContent<CR>
+
+" ============================================================
+"  GIT ACTIONS
+" ============================================================
+nnoremap <leader>gb :Git.Branches<CR>
+nnoremap <leader>gc :CheckinProject<CR>
+nnoremap <leader>gp :Vcs.Push<CR>
+nnoremap <leader>gl :Vcs.Show.Log<CR>
+nnoremap <leader>gd :Compare.SameVersion<CR>
+
+" ============================================================
+"  MISC
+" ============================================================
+" Easier beginning / end of line
+nnoremap H ^
+nnoremap L $
+vnoremap H ^
+vnoremap L $
+
+" Select all
+nnoremap <leader>a ggVG
+
+" Duplicate line
+nnoremap <leader>dl yyp
+vnoremap <leader>dl y'>p
+
+" ============================================================
+"  WHICH-KEY DESCRIPTIONS  (optional — shows hints in IJ)
+" ============================================================
+set which-key
+set notimeout
+
+let g:WhichKeyDesc_leader         = "<leader> Leader"
+let g:WhichKeyDesc_clipboard_yank = "<leader>y Yank → clipboard"
+let g:WhichKeyDesc_clipboard_Y    = "<leader>Y Yank line → clipboard"
+let g:WhichKeyDesc_clipboard_p    = "<leader>p Paste from clipboard"
+let g:WhichKeyDesc_delete_void    = "<leader>d Delete (no register)"
+let g:WhichKeyDesc_save           = "<leader>w Save file"
+let g:WhichKeyDesc_find           = "<leader>f Find"
+let g:WhichKeyDesc_find_file      = "<leader>ff Search everywhere"
+let g:WhichKeyDesc_find_recent    = "<leader>fr Recent files"
+let g:WhichKeyDesc_find_goto      = "<leader>fg Go to file"
+let g:WhichKeyDesc_find_struct    = "<leader>fs File structure"
+let g:WhichKeyDesc_refactor       = "<leader>r Refactor/Run"
+let g:WhichKeyDesc_rename         = "<leader>rn Rename element"
+let g:WhichKeyDesc_run            = "<leader>rr Run"
+let g:WhichKeyDesc_debug          = "<leader>rd Debug"
+let g:WhichKeyDesc_stop           = "<leader>rs Stop"
+let g:WhichKeyDesc_code           = "<leader>c Code"
+let g:WhichKeyDesc_action         = "<leader>ca Code actions"
+let g:WhichKeyDesc_format         = "<leader>cf Format code"
+let g:WhichKeyDesc_git            = "<leader>g Git"
+let g:WhichKeyDesc_git_branch     = "<leader>gb Git branches"
+let g:WhichKeyDesc_git_commit     = "<leader>gc Git commit"
+let g:WhichKeyDesc_git_push       = "<leader>gp Git push"
+let g:WhichKeyDesc_git_log        = "<leader>gl Git log"
+let g:WhichKeyDesc_git_diff       = "<leader>gd Git diff"
+let g:WhichKeyDesc_split          = "<leader>s Split"
+let g:WhichKeyDesc_split_v        = "<leader>sv Split vertical"
+let g:WhichKeyDesc_split_h        = "<leader>sh Split horizontal"
+let g:WhichKeyDesc_explorer       = "<leader>e Project tree"
+let g:WhichKeyDesc_terminal       = "<leader>t Terminal"
+let g:WhichKeyDesc_close          = "<leader>q Close tab"
+let g:WhichKeyDesc_breakpoint     = "<leader>bp Toggle breakpoint"
+let g:WhichKeyDesc_select_all     = "<leader>a Select all"
+let g:WhichKeyDesc_dup_line       = "<leader>dl Duplicate line"

@@ -1,0 +1,27 @@
+#!/bin/bash
+
+# Define the WARP interface name from your resolvectl status
+INTERFACE="CloudflareWARP"
+
+if [ "$1" == "on" ]; then
+    echo "🚀 Connecting WARP and forcing DNS tunnel..."
+    warp-cli connect
+    # Wait a moment for the interface to initialize
+    sleep 2
+    sudo resolvectl default-route "$INTERFACE" true
+    sudo resolvectl domain "$INTERFACE" "~."
+    sudo resolvectl dns "$INTERFACE" 1.1.1.1 1.0.0.1
+    sudo resolvectl flush-caches
+    echo "✅ Done! Reddit should work now."
+
+elif [ "$1" == "off" ]; then
+    echo "🛑 Disconnecting WARP and restoring system DNS..."
+    sudo resolvectl default-route "$INTERFACE" false
+    sudo resolvectl domain "$INTERFACE" ""
+    warp-cli disconnect
+    sudo resolvectl flush-caches
+    echo "✅ System restored to default."
+
+else
+    echo "Usage: ./warp-toggle.sh [on|off]"
+fi

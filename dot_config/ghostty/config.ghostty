@@ -1,0 +1,30 @@
+# Font
+font-family = JetBrainsMono Nerd Font
+font-size = 12
+font-thicken = true
+
+# Appearance
+background-opacity = 0.90
+background-blur = 20
+theme = noctalia
+
+# Window
+window-decoration = false
+window-padding-x = 8
+window-padding-y = 8
+
+# Performance — GTK single instance (much faster startup)
+gtk-single-instance = true
+
+# Shell integration (auto-detects fish/zsh/bash)
+shell-integration = detect
+shell-integration-features = cursor,sudo,title
+
+# Cursor
+cursor-style = bar
+cursor-style-blink = false
+
+# Misc
+copy-on-select = clipboard
+mouse-hide-while-typing = true
+
