@@ -123,6 +123,93 @@ exec-once = ~/.config/hypr/scripts/hyprland-switcher.sh
 
 *Note: Comment this line out if you don't need it, or if you actually enjoy chaos when managing your external displays.*
 
+## Keybindings
+
+The primary modifier key (`$mainMod`) is set to the **SUPER** (Windows) key. 
+
+*Note: Many of these shell bindings rely on Noctalia's IPC. If nothing happens when you press them, Noctalia probably crashed again. See the bottom of the table for the restart bind.*
+
+### Apps & Launchers
+
+| Shortcut | Action |
+| :--- | :--- |
+| **SUPER** + **SPACE** | Toggle App Launcher |
+| **SUPER** + **V** | Clipboard History Launcher |
+| **SUPER** + **.** | Emoji Picker |
+| **SUPER** + **Tab** | Window Switcher Launcher |
+| **SUPER** + **Return** | Open Terminal |
+| **SUPER** + **E** | Open File Manager |
+| **SUPER** + **B** | Open Web Browser |
+
+### Noctalia Shell Controls
+
+| Shortcut | Action |
+| :--- | :--- |
+| **SUPER** + **S** | Toggle Control Center |
+| **SUPER** + **,** | Toggle Settings |
+| **SUPER** + **N** | Toggle Notification History |
+| **SUPER** + **SHIFT** + **N** | Toggle Do Not Disturb (DND) |
+| **SUPER** + **W** | Toggle Desktop Widgets |
+| **SUPER** + **D** | Toggle Dock |
+| **SUPER** + **Escape** | Toggle Session Menu |
+| **SUPER** + **L** | Lock Screen |
+| **SUPER** + **SHIFT** + **D** | Toggle Dark Mode |
+| **SUPER** + **SHIFT** + **I** | Toggle Idle Inhibitor (Keep awake) |
+| **SUPER** + **SHIFT** + **W** | Randomize Wallpaper |
+| **SUPER** + **SHIFT** + **R** | **Restart Noctalia** *(Use when it inevitably crashes)* |
+
+### Window Management & Focus
+
+| Shortcut | Action |
+| :--- | :--- |
+| **SUPER** + **Q** | Kill Active Window |
+| **SUPER** + **F** | Toggle Fullscreen |
+| **SUPER** + **SHIFT** + **SPACE** | Toggle Floating & Center Window |
+| **SUPER** + **P** | Toggle Pseudo Tiling |
+| **SUPER** + **J** | Toggle Split Direction |
+| **SUPER** + **\\** | Swap Split |
+| **SUPER** + **Arrow Keys** | Move Focus (Left/Right/Up/Down) |
+| **SUPER** + **SHIFT** + **H/J/K/L** | Move Window (Vim directional keys) |
+| **SUPER** + **CTRL** + **H/J/K/L** | Resize Active Window |
+
+### Workspaces & Window Groups
+
+| Shortcut | Action |
+| :--- | :--- |
+| **SUPER** + **1-9** | Switch to Workspace 1-9 |
+| **SUPER** + **SHIFT** + **1-9** | Move Active Window to Workspace 1-9 |
+| **SUPER** + **Scroll** | Cycle through Workspaces |
+| **SUPER** + **M** | Minimize Window (Move to special workspace) |
+| **SUPER** + **SHIFT** + **M** | Toggle Minimized Windows (Special workspace) |
+| **SUPER** + **T** | Toggle Window Group (Sway-style tabbed) |
+| **SUPER** + **[** / **]** | Cycle Active Group backward/forward |
+| **SUPER** + **SHIFT** + **T** | Move window into neighboring group |
+| **SUPER** + **CTRL** + **T** | Move window out of group |
+
+### Media & System Controls
+
+| Shortcut | Action |
+| :--- | :--- |
+| **Vol Up / Vol Down** | Increase/Decrease Volume |
+| **Mute Key** | Mute Audio Output |
+| **Mic Mute Key** | Mute Microphone Input |
+| **Brightness Up/Down** | Increase/Decrease Screen Brightness |
+| **Play/Pause/Next/Prev** | Media Controls via IPC |
+
+### Screenshots (Grimblast)
+
+*Screenshots are automatically saved to `~/Pictures/Screenshots`. Ensure the directory exists, or Grimblast will just silently fail and leave you wondering where your image went.*
+
+| Shortcut | Action |
+| :--- | :--- |
+| **Print** | Save Screen to File |
+| **SUPER** + **Print** | Save Selected Area to File |
+| **SUPER** + **ALT** + **Print** | Save Active Window to File |
+| **SHIFT** + **Print** | Copy Screen to Clipboard |
+| **SUPER** + **SHIFT** + **Print** | Copy Selected Area to Clipboard |
+| **CTRL** + **Print** | Copy & Save Selected Area |
+| **SUPER** + **CTRL** + **ALT** + **Print** | Edit Selected Area (Opens in GIMP/Editor) |
+
 ## Issues
 
 This guide is probably incomplete because I likely forgot half the steps I actually took to get this working. In that case, feel free to raise a new issue.
