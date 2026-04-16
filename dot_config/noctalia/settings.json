@@ -61,7 +61,8 @@
         "middleClickFollowMouse": false,
         "monitors": [
             "eDP-1",
-            "HDMI-A-1"
+            "HDMI-A-1",
+            "DP-2"
         ],
         "mouseWheelAction": "none",
         "mouseWheelWrap": true,
@@ -115,6 +116,7 @@
             "left": [
                 {
                     "colorizeSystemIcon": "none",
+                    "colorizeSystemText": "none",
                     "customIconPath": "",
                     "enableColorization": false,
                     "icon": "rocket",
@@ -253,6 +255,7 @@
                 {
                     "colorizeDistroLogo": false,
                     "colorizeSystemIcon": "none",
+                    "colorizeSystemText": "none",
                     "customIconPath": "",
                     "enableColorization": false,
                     "icon": "noctalia",
