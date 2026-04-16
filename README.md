@@ -85,6 +85,12 @@ Finally theming:
 sudo pacman -S qt6ct
 ```
 
+And clipboard history:
+
+```bash
+sudo pacman -S cliphist
+```
+
 ## Installing the Dotfiles
 
 Run Chezmoi to apply the configs:
