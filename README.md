@@ -84,7 +84,7 @@ sudo pacman -S grim slurp satty hyprpicker
 Run Chezmoi to apply the configs:
 
 ```bash
-chezmoi --init apply albetnov
+chezmoi init --apply albetnov
 ```
 
 Once that's done, restart your Hyprland session.
