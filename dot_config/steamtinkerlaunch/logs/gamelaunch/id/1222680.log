@@ -1,0 +1,112 @@
+ERROR: ld.so: object '/home/albetnv/.local/share/Steam/ubuntu12_32/gameoverlayrenderer.so' from LD_PRELOAD cannot be preloaded (wrong ELF class: ELFCLASS32): ignored.
+ERROR: ld.so: object '/home/albetnv/.local/share/Steam/ubuntu12_32/gameoverlayrenderer.so' from LD_PRELOAD cannot be preloaded (wrong ELF class: ELFCLASS32): ignored.
+ProtonFixes[38608] INFO: Running protonfixes on "GE-Proton10-34", build at 2026-03-23 03:55:11+00:00.
+ProtonFixes[38608] INFO: Running checks
+ProtonFixes[38608] INFO: All checks successful
+ProtonFixes[38608] INFO: Using early stage global defaults for "Need for Speed™ Heat " (1222680)
+ProtonFixes[38608] INFO: No early stage global protonfix found for "Need for Speed™ Heat " (1222680)
+Proton: Upgrading prefix from 10.1000-200 to GE-Proton10-34 (/home/albetnv/.local/share/Steam/steamapps/compatdata/1222680/)
+Proton: Prefix has an invalid version?! You may want to back up user files and delete this prefix.
+ProtonFixes[38608] INFO: Running protonfixes on "GE-Proton10-34", build at 2026-03-23 03:55:11+00:00.
+ProtonFixes[38608] INFO: Running checks
+ProtonFixes[38608] INFO: All checks successful
+ProtonFixes[38608] INFO: Using main stage global defaults for "Need for Speed™ Heat " (1222680)
+ProtonFixes[38608] INFO: No main stage global protonfix found for "Need for Speed™ Heat " (1222680)
+wineserver: NTSync up and running!
+WARNING: radv is not a conformant Vulkan implementation, testing use only.
+WARNING: radv is not a conformant Vulkan implementation, testing use only.
+WARNING: radv is not a conformant Vulkan implementation, testing use only.
+WARNING: radv is not a conformant Vulkan implementation, testing use only.
+WARNING: radv is not a conformant Vulkan implementation, testing use only.
+WARNING: radv is not a conformant Vulkan implementation, testing use only.
+WARNING: radv is not a conformant Vulkan implementation, testing use only.
+WARNING: radv is not a conformant Vulkan implementation, testing use only.
+WARNING: radv is not a conformant Vulkan implementation, testing use only.
+WARNING: radv is not a conformant Vulkan implementation, testing use only.
+Fossilize INFO: Overriding serialization path: "/home/albetnv/.local/share/Steam/steamapps/shadercache/1222680/fozpipelinesv6/steamapprun_pipeline_cache".
+WARNING: radv is not a conformant Vulkan implementation, testing use only.
+WARNING: radv is not a conformant Vulkan implementation, testing use only.
+Fossilize INFO: Overriding serialization path: "/home/albetnv/.local/share/Steam/steamapps/shadercache/1222680/fozpipelinesv6/steamapprun_pipeline_cache".
+WARNING: radv is not a conformant Vulkan implementation, testing use only.
+info:  Game: EABackgroundService.exe
+info:  DXVK: v2.7.1-509-g1676dcaf342a9b1
+info:  Build: x86_64 gcc 14.2.0
+info:  Vulkan: Found vkGetInstanceProcAddr in winevulkan.dll @ 0x6ffffd16fbf0
+info:  Extension providers:
+info:    Platform WSI
+info:    OpenVR
+info:    OpenXR
+warn:  OpenXR: Unable to get required Vulkan instance extensions size
+info:  Enabled instance extensions:
+info:    VK_KHR_get_surface_capabilities2
+info:    VK_KHR_surface
+info:    VK_KHR_surface_maintenance1
+info:    VK_KHR_win32_surface
+WARNING: radv is not a conformant Vulkan implementation, testing use only.
+WARNING: radv is not a conformant Vulkan implementation, testing use only.
+info:  Found device: AMD Radeon RX 9060 XT (RADV GFX1200) (radv 26.0.4)
+warn:  OpenXR: Unable to get required Vulkan Device extensions size
+Unhandled exception in Xalia:
+System.Threading.Tasks.TaskCanceledException: A task was canceled.
+  at Xalia.Win32.CommandThread.OnBackgroundThread[T] (System.Func`1[TResult] func, Xalia.Win32.CommandThreadPriority priority) [0x000d1] in <743e8bdcd9c54484ad89463ed4e626f6>:0 
+  at Xalia.Win32.NonclientScrollProvider.RefreshScrollInfo () [0x0009c] in <743e8bdcd9c54484ad89463ed4e626f6>:0 
+  at Xalia.Utils.DoRunTask (System.Object o) [0x00063] in <743e8bdcd9c54484ad89463ed4e626f6>:0 
+Unhandled exception in Xalia:
+System.Threading.Tasks.TaskCanceledException: A task was canceled.
+  at Xalia.Win32.CommandThread.OnBackgroundThread[T] (System.Func`1[TResult] func, Xalia.Win32.CommandThreadPriority priority) [0x000d1] in <743e8bdcd9c54484ad89463ed4e626f6>:0 
+  at Xalia.Win32.NonclientScrollProvider.RefreshScrollBarInfo () [0x000b7] in <743e8bdcd9c54484ad89463ed4e626f6>:0 
+  at Xalia.Utils.DoRunTask (System.Object o) [0x00063] in <743e8bdcd9c54484ad89463ed4e626f6>:0 
+Unhandled exception in Xalia:
+System.Threading.Tasks.TaskCanceledException: A task was canceled.
+  at Xalia.Win32.CommandThread.OnBackgroundThread[T] (System.Func`1[TResult] func, Xalia.Win32.CommandThreadPriority priority) [0x000d1] in <743e8bdcd9c54484ad89463ed4e626f6>:0 
+  at Xalia.Win32.NonclientScrollProvider.RefreshScrollBarInfo () [0x000b7] in <743e8bdcd9c54484ad89463ed4e626f6>:0 
+  at Xalia.Utils.DoRunTask (System.Object o) [0x00063] in <743e8bdcd9c54484ad89463ed4e626f6>:0 
+Unhandled exception in Xalia:
+System.Threading.Tasks.TaskCanceledException: A task was canceled.
+  at Xalia.Win32.CommandThread.OnBackgroundThread[T] (System.Func`1[TResult] func, Xalia.Win32.CommandThreadPriority priority) [0x000d1] in <743e8bdcd9c54484ad89463ed4e626f6>:0 
+  at Xalia.Win32.NonclientScrollProvider.RefreshScrollBarInfo () [0x000b7] in <743e8bdcd9c54484ad89463ed4e626f6>:0 
+  at Xalia.Utils.DoRunTask (System.Object o) [0x00063] in <743e8bdcd9c54484ad89463ed4e626f6>:0 
+Unhandled exception in Xalia:
+System.Threading.Tasks.TaskCanceledException: A task was canceled.
+  at Xalia.Win32.CommandThread.OnBackgroundThread[T] (System.Func`1[TResult] func, Xalia.Win32.CommandThreadPriority priority) [0x000d1] in <743e8bdcd9c54484ad89463ed4e626f6>:0 
+  at Xalia.Win32.NonclientScrollProvider.RefreshScrollBarInfo () [0x000b7] in <743e8bdcd9c54484ad89463ed4e626f6>:0 
+  at Xalia.Utils.DoRunTask (System.Object o) [0x00063] in <743e8bdcd9c54484ad89463ed4e626f6>:0 
+Unhandled exception in Xalia:
+System.Threading.Tasks.TaskCanceledException: A task was canceled.
+  at Xalia.Win32.CommandThread.OnBackgroundThread[T] (System.Func`1[TResult] func, Xalia.Win32.CommandThreadPriority priority) [0x000d1] in <743e8bdcd9c54484ad89463ed4e626f6>:0 
+  at Xalia.Win32.NonclientScrollProvider.RefreshScrollInfo () [0x0009c] in <743e8bdcd9c54484ad89463ed4e626f6>:0 
+  at Xalia.Utils.DoRunTask (System.Object o) [0x00063] in <743e8bdcd9c54484ad89463ed4e626f6>:0 
+WARNING: radv is not a conformant Vulkan implementation, testing use only.
+WARNING: radv is not a conformant Vulkan implementation, testing use only.
+WARNING: radv is not a conformant Vulkan implementation, testing use only.
+WARNING: radv is not a conformant Vulkan implementation, testing use only.
+WARNING: radv is not a conformant Vulkan implementation, testing use only.
+Fossilize INFO: Overriding serialization path: "/home/albetnv/.local/share/Steam/steamapps/shadercache/1222680/fozpipelinesv6/steamapprun_pipeline_cache".
+WARNING: radv is not a conformant Vulkan implementation, testing use only.
+WARNING: radv is not a conformant Vulkan implementation, testing use only.
+WARNING: radv is not a conformant Vulkan implementation, testing use only.
+Fossilize INFO: Overriding serialization path: "/home/albetnv/.local/share/Steam/steamapps/shadercache/1222680/fozpipelinesv6/steamapprun_pipeline_cache".
+WARNING: radv is not a conformant Vulkan implementation, testing use only.
+WARNING: radv is not a conformant Vulkan implementation, testing use only.
+WARNING: radv is not a conformant Vulkan implementation, testing use only.
+WARNING: radv is not a conformant Vulkan implementation, testing use only.
+Fossilize INFO: Overriding serialization path: "/home/albetnv/.local/share/Steam/steamapps/shadercache/1222680/fozpipelinesv6/steamapprun_pipeline_cache".
+WARNING: radv is not a conformant Vulkan implementation, testing use only.
+WARNING: radv is not a conformant Vulkan implementation, testing use only.
+WARNING: radv is not a conformant Vulkan implementation, testing use only.
+Fossilize INFO: Overriding serialization path: "/home/albetnv/.local/share/Steam/steamapps/shadercache/1222680/fozpipelinesv6/steamapprun_pipeline_cache".
+Fossilize INFO: Overriding serialization path: "/home/albetnv/.local/share/Steam/steamapps/shadercache/1222680/fozpipelinesv6/steamapprun_pipeline_cache".
+WARNING: radv is not a conformant Vulkan implementation, testing use only.
+Fossilize INFO: Overriding serialization path: "/home/albetnv/.local/share/Steam/steamapps/shadercache/1222680/fozpipelinesv6/steamapprun_pipeline_cache".
+WARNING: radv is not a conformant Vulkan implementation, testing use only.
+WARNING: radv is not a conformant Vulkan implementation, testing use only.
+WARNING: radv is not a conformant Vulkan implementation, testing use only.
+Fossilize INFO: Overriding serialization path: "/home/albetnv/.local/share/Steam/steamapps/shadercache/1222680/fozpipelinesv6/steamapprun_pipeline_cache".
+WARNING: radv is not a conformant Vulkan implementation, testing use only.
+WARNING: radv is not a conformant Vulkan implementation, testing use only.
+WARNING: radv is not a conformant Vulkan implementation, testing use only.
+WARNING: radv is not a conformant Vulkan implementation, testing use only.
+WARNING: radv is not a conformant Vulkan implementation, testing use only.
+WARNING: radv is not a conformant Vulkan implementation, testing use only.
+Fossilize INFO: Overriding serialization path: "/home/albetnv/.local/share/Steam/steamapps/shadercache/1222680/fozpipelinesv6/steamapprun_pipeline_cache".
+pid 38626 != 38625, skipping destruction (fork without exec?)

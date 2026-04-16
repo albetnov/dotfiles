@@ -1,0 +1,6 @@
+RUNPROTON="/home/albetnv/.local/share/Steam/compatibilitytools.d/Proton-GE Latest/proton"
+RUNWINE="/home/albetnv/.local/share/Steam/compatibilitytools.d/Proton-GE Latest/files/bin/wine"
+PROTONVERSION="Proton-GE Latest"
+PREVAID="1222680"
+PREVGAME="Need for Speed Heat"
+PREVABSGAMEEXEPATH=""

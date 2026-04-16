@@ -1,0 +1,43 @@
+Kam 16 Apr 2026 20:27:26 WIB INFO - initAID - Set AID to PLACEHOLDERAID '31337'
+Kam 16 Apr 2026 20:27:26 WIB INFO - loadLangFile - Language from command line is 'english'
+Kam 16 Apr 2026 20:27:26 WIB INFO - loadLangFile - SYSTEMSTLCFGDIR is '/usr/share/steamtinkerlaunch'
+Kam 16 Apr 2026 20:27:26 WIB INFO - loadLangFile - Command line language 'english' is no file - trying to find its absolute path
+Kam 16 Apr 2026 20:27:26 WIB INFO - loadLangFile - Loading found system wide /usr/share/steamtinkerlaunch/lang//english.txt
+Kam 16 Apr 2026 20:27:26 WIB INFO - getCurrentCommandline - No Proton in command line arguments 'settings'
+Kam 16 Apr 2026 20:27:26 WIB INFO - saveOrgVars - Storing some original variables to restore them later
+Kam 16 Apr 2026 20:27:26 WIB INFO - emptyVars - Emptied some original variables as they slowdown several system calls when started from steam
+Kam 16 Apr 2026 20:27:26 WIB INFO - emptyVars - Set $PATH to '/home/albetnv/tools/flutter/flutter/bin:/home/albetnv/whatcanirun/.venv/bin:/home/albetnv/.bun/bin:/home/albetnv/.nix-profile/bin:/home/albetnv/.local/bin:/usr/local/bin:/usr/bin:/bin:/usr/local/sbin:/usr/lib/jvm/default/bin:/usr/bin/site_perl:/usr/bin/vendor_perl:/usr/bin/core_perl:/home/albetnv/.local/share/JetBrains/Toolbox/scripts:'
+Kam 16 Apr 2026 20:27:26 WIB START - ######### Initializing Game Launch 31337 using SteamTinkerLaunch v12.12 #########
+Kam 16 Apr 2026 20:27:26 WIB INFO - main - Starting with a clean log
+Kam 16 Apr 2026 20:27:26 WIB INFO - main - Start creating default configs
+Kam 16 Apr 2026 20:27:26 WIB INFO - createDefaultCfgs - START
+Kam 16 Apr 2026 20:27:26 WIB INFO - loadLanguage - First load the default language 'english' to make sure all variables are filled
+Kam 16 Apr 2026 20:27:26 WIB INFO - loadLangFile - Language from command line is 'english'
+Kam 16 Apr 2026 20:27:26 WIB INFO - loadLangFile - GLOBALSTLLANGDIR is '/usr/share/steamtinkerlaunch/lang'
+Kam 16 Apr 2026 20:27:26 WIB INFO - loadLangFile - Command line language 'english' is no file - trying to find its absolute path
+Kam 16 Apr 2026 20:27:26 WIB INFO - loadLangFile - Loading found system wide /usr/share/steamtinkerlaunch/lang/english.txt
+Kam 16 Apr 2026 20:27:26 WIB INFO - loadLanguage - Loading STLLANG from '/home/albetnv/.config/steamtinkerlaunch/global.conf'
+Kam 16 Apr 2026 20:27:26 WIB INFO - loadLanguage - STLLANG from '/home/albetnv/.config/steamtinkerlaunch/global.conf' is 'english'
+Kam 16 Apr 2026 20:27:26 WIB INFO - createDefaultCfgs - setSteamPaths:
+Kam 16 Apr 2026 20:27:26 WIB INFO - setSteamPaths - Reading Steam Path variables from '/dev/shm/steamtinkerlaunch/steampaths.txt'
+Kam 16 Apr 2026 20:27:26 WIB INFO - getGameOS - Starting game OS detection
+Kam 16 Apr 2026 20:27:26 WIB INFO - getGameOS - STEAM_COMPAT_DATA_PATH is not defined, so this is either a Linux Game or no game was started at all
+Kam 16 Apr 2026 20:27:26 WIB INFO - listAllSettingsEntries - '/dev/shm/steamtinkerlaunch/setentries.txt' already exists - nothing to do
+Kam 16 Apr 2026 20:27:26 WIB INFO - createDefaultCfgs - STOP
+Kam 16 Apr 2026 20:27:26 WIB SKIP - listSteamLibraries - not recreating already available '/dev/shm/steamtinkerlaunch/SteamLibraries.txt'
+Kam 16 Apr 2026 20:27:26 WIB INFO - setSteamLibraryPaths - STEAM_COMPAT_LIBRARY_PATHS set to '/home/albetnv/.local/share/Steam/steamapps'
+Kam 16 Apr 2026 20:27:26 WIB INFO - setSteamLibraryPaths - STEAM_COMPAT_MOUNTS set to '/home/albetnv/.local/share/Steam/steamapps/common/SteamLinuxRuntime_sniper:/home/albetnv/.local/share/Steam/steamapps/common/Steamworks Shared'
+Kam 16 Apr 2026 20:27:26 WIB INFO - setSteamLibraryPaths - STEAM_COMPAT_TOOL_PATHS set to '/home/albetnv/.local/share/Steam/steamapps/common/SteamLinuxRuntime_sniper:/home/albetnv/.local/share/Steam/steamapps/common/Steamworks Shared'
+Kam 16 Apr 2026 20:27:26 WIB INFO - main - Checking internal dependencies:
+Kam 16 Apr 2026 20:27:26 WIB INFO - setAwkBin - Found 'gawk' as an 'awk' variant. It should work without any issues, because 'gawk' was tested completely
+Kam 16 Apr 2026 20:27:26 WIB INFO - checkIntDeps - Result of version check for yad binary '/usr/bin/yad' is '14.2'
+Kam 16 Apr 2026 20:27:26 WIB INFO - main - Initializing first Proton:
+Kam 16 Apr 2026 20:27:26 WIB INFO - initOldProtonArr - Creating an initial array with available Proton versions using the file '/dev/shm/steamtinkerlaunch/ProtonCSV.txt' which was created during a previous run
+Kam 16 Apr 2026 20:27:26 WIB INFO - initFirstProton - Initializing Proton
+Kam 16 Apr 2026 20:27:26 WIB INFO - initFirstProton - Initial Proton version 'FIRSTUSEPROTON' from '/home/albetnv/.config/steamtinkerlaunch/default_template.conf' is 'none'
+Kam 16 Apr 2026 20:27:26 WIB INFO - main - Initializing default window resolution
+Kam 16 Apr 2026 20:27:26 WIB INFO - setInitWinXY - Using '1440x810' from config '/dev/shm/steamtinkerlaunch/defres.txt'
+Kam 16 Apr 2026 20:27:26 WIB INFO - main - Welcome to SteamTinkerLaunch
+Kam 16 Apr 2026 20:27:26 WIB INFO - removeEmptyFiles - Removing empty files from '/home/albetnv/.config/steamtinkerlaunch/games/appinfo'
+Kam 16 Apr 2026 20:27:26 WIB INFO - removeEmptyFiles - Removing empty files from '/home/albetnv/.config/steamtinkerlaunch/games/header'
+Kam 16 Apr 2026 20:27:26 WIB INFO - main - Checking command line: incoming arguments 'settings'

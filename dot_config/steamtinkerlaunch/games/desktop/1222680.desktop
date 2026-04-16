@@ -1,0 +1,8 @@
+[Desktop Entry]
+Name=Need for Speed Heat
+Comment=Play this game on Steam
+Exec=steam steam://rungameid/1222680
+Icon=/home/albetnv/.config/steamtinkerlaunch/games/header/1222680.jpg
+Terminal=false
+Type=Application
+Categories=Game;
