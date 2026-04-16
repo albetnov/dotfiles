@@ -79,6 +79,12 @@ For your screenshot needs:
 sudo pacman -S grim slurp satty hyprpicker
 ```
 
+Finally theming:
+
+```bash
+sudo pacman -S qt6ct
+```
+
 ## Installing the Dotfiles
 
 Run Chezmoi to apply the configs:
