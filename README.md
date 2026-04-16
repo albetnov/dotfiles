@@ -1,4 +1,4 @@
-# Dotfiles
+# Dotfiles (Desktop Version)
 
 Welcome to the Hyprland Dotfiles!
 
@@ -9,3 +9,20 @@ However, since my main desktop is already rocking CachyOS, I decided to drag my 
 ## Setup
 
 Refer to [Hyprland Branch](https://github.com/albetnov/dotfiles/tree/hyprland).
+
+## Additional Requirements
+
+```bash
+sudo pacman -S gamemode
+```
+
+```bash
+paru -S steamtinkerlaunch
+steamtinkerlaunch compat add # first setup
+```
+
+## Gaming Related Changes
+
+- allow_tearing is enabled
+- immediate window rule is set
+- direct_scanout is enabled
