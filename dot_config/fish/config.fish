@@ -12,10 +12,17 @@ end
 fish_add_path ~/.local/bin
 fish_add_path ~/.nix-profile/bin
 fish_add_path ~/.bun/bin
+fish_add_path ~/.npm-global/bin
+
+set -Ux CHROME_EXECUTABLE helium-browser
+fish_add_path ~/SDKs/flutter/bin
+fish_add_path ~/.config/composer/vendor/bin
 
 alias ps 'procs'
 alias cat 'bat'
 alias aigoo 'nvim'
+alias turu 'opencode'
+alias wok 'zellij attach --create wok'
 
 zoxide init fish | source
 

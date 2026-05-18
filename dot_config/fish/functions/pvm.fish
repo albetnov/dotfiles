@@ -134,7 +134,7 @@ function pvm -d "PHP Version Manager (Session Isolated)"
         end
 
         echo (set_color blue; set_color -o)"ℹ PVM:"(set_color normal)" Removing "(set_color yellow)"$target"(set_color normal)" from Nix profile..."
-        nix profile remove ".*$target.*"
+        nix profile remove "$target"
 
         if test $status -eq 0
             echo (set_color green; set_color -o)"✓ PVM:"(set_color normal)" Successfully removed $target."
