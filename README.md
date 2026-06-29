@@ -101,21 +101,41 @@ chezmoi init --apply albetnov
 
 Once that's done, restart your Hyprland session.
 
+> **Note:** The config has been migrated from pure conf-style to **Lua**.
+> The primary config file is now `~/.config/hypr/hyprland.lua` (the legacy
+> `hyprland.conf` still exists as a reference). The Lua config replaces all
+> `exec-once` autostart lines and external scripts with native Lua event
+> handlers and inline calls.
+
 ## Configuration (The Fun Part)
 
-Once you've applied the dotfiles, you'll inevitably need to tweak the actual `hyprland.conf` because my hardware isn't your hardware. 
+Once you've applied the dotfiles, you'll inevitably need to tweak the actual
+`hyprland.lua` (or `hyprland.conf` if you prefer the legacy config) because
+my hardware isn't your hardware. 
 
 ### Monitors
 
 By default, Hyprland tries to be smart about your monitors. However, my recommendation is to don't let it guess; hardcode them so it knows exactly where to push your pixels. Open your config and adjust the monitor section:
 
-```bash
-################
-### MONITORS ###
-################
+**Lua config** (`hyprland.lua`):
+```lua
+hl.monitor({
+  output   = "HDMI-A-1",
+  mode     = "1920x1080@60Hz",
+  position = "0x0",
+  scale    = 1,
+})
 
-# See https://wiki.hypr.land/Configuring/Monitors/
-# monitor=,preferred,auto,auto
+hl.monitor({
+  output   = "eDP-1",
+  mode     = "1920x1080@60Hz",
+  position = "1920x0",
+  scale    = 1,
+})
+```
+
+**Legacy conf** (`hyprland.conf`):
+```bash
 monitor = HDMI-A-1, 1920x1080@60, 0x0, 1
 monitor = eDP-1, 1920x1080@60, 1920x0, 1
 ```
@@ -124,16 +144,22 @@ monitor = eDP-1, 1920x1080@60, 1920x0, 1
 
 ### Workspace Dynamic Switcher
 
-Hyprland's default multi-monitor workspace logic can be mildly infuriating. If you have a dual monitor setup, you probably want workspace 1 locked to your primary monitor and workspace 2 on the secondary one. 
+Hyprland's default multi-monitor workspace logic can be mildly infuriating. If you have a dual monitor setup, you probably want workspace 1 locked to your primary monitor and workspace 2 on the secondary one.
 
-To force Hyprland into submission and make sure your workspaces don't scramble themselves when you plug things in, we use a script. Add this to your config:
+The Lua config handles this natively via event-driven monitor hotplug detection — no external script needed:
 
-```bash
-# Workspace Dynamic Switcher Script
-exec-once = ~/.config/hypr/scripts/hyprland-switcher.sh
+```lua
+hl.on("monitor.added",   assign_workspaces)
+hl.on("monitor.removed", assign_workspaces)
 ```
 
-*Note: Comment this line out if you don't need it, or if you actually enjoy chaos when managing your external displays.*
+The `assign_workspaces()` function queries `hl.get_monitors()`, checks whether
+your external display (HDMI-A-1) is connected, and assigns workspaces 1/2 to
+the appropriate monitors dynamically. This replaces the old
+`hyprland-switcher.sh` bash script entirely.
+
+*(If you're using the legacy `hyprland.conf`, you can still enable the old
+script by uncommenting `exec-once = ~/.config/hypr/scripts/hyprland-switcher.sh`.)*
 
 ## Keybindings
 
