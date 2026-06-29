@@ -79,6 +79,11 @@ return {
         -- ["<C-S>"] = false,
         ["<Leader>W"] = { ":noa w<CR>", desc = "Save without autocmds" },
       },
+
+      t = {
+        -- Press Ctrl + x to instantly toggle/hide the floating terminal
+        ["<C-x>"] = { "<cmd>ToggleTerm<cr>", desc = "Toggle terminal" },
+      },
     },
   },
 }

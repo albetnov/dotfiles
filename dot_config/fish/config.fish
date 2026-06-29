@@ -1,6 +1,7 @@
 set fish_greeting
 
 set -gx SSH_AUTH_SOCK "$XDG_RUNTIME_DIR/ssh-agent.socket"
+set -gx EDITOR "nvim"
 
 abbr -a mirrors 'sudo reflector --protocol https --latest 10 --sort rate --save /etc/pacman.d/mirrorlist'
 
@@ -27,3 +28,8 @@ alias wok 'zellij attach --create wok'
 zoxide init fish | source
 
 starship init fish | source
+
+# opencode
+fish_add_path /home/albetnv/.opencode/bin
+
+mise activate fish | source
