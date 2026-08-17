@@ -1,0 +1,31 @@
+" --- Cursor Shape Config ---
+let &t_SI = "\e[6 q"
+let &t_SR = "\e[4 q"
+let &t_EI = "\e[2 q"
+
+autocmd VimEnter,VimResume * silent !printf "\e[2 q"
+autocmd VimLeave,VimSuspend * silent !printf "\e[2 q"
+
+" --- Leader Key ---
+let mapleader = "\<Space>"
+
+" --- NERDTree Keybinds ---
+" Toggle with Ctrl + e
+nnoremap <C-e> :NERDTreeToggle<CR>
+
+" Toggle or find current file with Leader key (<Leader> defaults to \)
+nnoremap <leader>n :NERDTreeFocus<CR>
+nnoremap <leader>f :NERDTreeFind<CR>
+
+" Close NERDTree automatically if it's the only window left
+autocmd BufEnter * if tabpagenr('$') == 1 && winnr('$') == 1 && exists('b:NERDTree') && b:NERDTree.isTabTree() | quit | endif
+
+" --- System Clipboard Integration ---
+" Use the system clipboard (+ / *) for all yank, delete, and paste operations
+set clipboard^=unnamed,unnamedplus
+
+" --- FZF Keybinds ---
+nnoremap <leader>ff :Files<CR>
+nnoremap <leader>fg :Rg<CR>
+nnoremap <leader>fb :Buffers<CR>
+nnoremap <leader>fh :Helptags<CR>
