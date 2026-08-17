@@ -165,22 +165,6 @@
                     "showText": true,
                     "textColor": "none",
                     "useFixedWidth": false
-                },
-                {
-                    "compactMode": false,
-                    "hideMode": "idle",
-                    "hideWhenIdle": false,
-                    "id": "MediaMini",
-                    "maxWidth": 145,
-                    "panelShowAlbumArt": true,
-                    "scrollingMode": "hover",
-                    "showAlbumArt": true,
-                    "showArtistFirst": true,
-                    "showProgressRing": true,
-                    "showVisualizer": false,
-                    "textColor": "none",
-                    "useFixedWidth": false,
-                    "visualizerType": "linear"
                 }
             ],
             "right": [
@@ -740,7 +724,7 @@
         "translucentWidgets": false
     },
     "wallpaper": {
-        "automationEnabled": true,
+        "automationEnabled": false,
         "directory": "/home/albetnv/Pictures/Wallpapers",
         "enableMultiMonitorDirectories": false,
         "enabled": true,

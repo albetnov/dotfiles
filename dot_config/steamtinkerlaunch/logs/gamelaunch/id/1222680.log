@@ -1,37 +1,212 @@
 ERROR: ld.so: object '/home/albetnv/.local/share/Steam/ubuntu12_32/gameoverlayrenderer.so' from LD_PRELOAD cannot be preloaded (wrong ELF class: ELFCLASS32): ignored.
+[gamescope] [[0;34mInfo[0m]  [0;37mconsole:[0m gamescope version 3.16.22+ (gcc 15.2.1)
+No CAP_SYS_NICE, falling back to regular-priority compute and threads.
+Performance will be affected.
+[gamescope] [[0;34mInfo[0m]  [0;37mscriptmgr:[0m Loading scripts from: '/usr/share/gamescope/scripts'
+[gamescope] [[0;34mInfo[0m]  [0;37mscriptmgr:[0m Loading scripts from: '/usr/share/gamescope/scripts/00-gamescope'
+[gamescope] [[0;34mInfo[0m]  [0;37mscriptmgr:[0m Loading scripts from: '/usr/share/gamescope/scripts/00-gamescope/common'
+[gamescope] [[0;34mInfo[0m]  [0;37mscriptmgr:[0m Running script file '/usr/share/gamescope/scripts/00-gamescope/common/inspect.lua' (id: 0)
+[gamescope] [[0;34mInfo[0m]  [0;37mscriptmgr:[0m Running script file '/usr/share/gamescope/scripts/00-gamescope/common/modegen.lua' (id: 1)
+[gamescope] [[0;34mInfo[0m]  [0;37mscriptmgr:[0m Running script file '/usr/share/gamescope/scripts/00-gamescope/common/util.lua' (id: 2)
+[gamescope] [[0;34mInfo[0m]  [0;37mscriptmgr:[0m Loading scripts from: '/usr/share/gamescope/scripts/00-gamescope/displays'
+[gamescope] [[0;34mInfo[0m]  [0;37mscriptmgr:[0m Running script file '/usr/share/gamescope/scripts/00-gamescope/displays/asus.rogally.lcd.lua' (id: 3)
+[gamescope] [[0;34mInfo[0m]  [0;37mscriptmgr:[0m Running script file '/usr/share/gamescope/scripts/00-gamescope/displays/deckhd.steamdeck.deckhd-lcd.lua' (id: 4)
+[gamescope] [[0;34mInfo[0m]  [0;37mscriptmgr:[0m Running script file '/usr/share/gamescope/scripts/00-gamescope/displays/gpd.win4.lcd.lua' (id: 5)
+[gamescope] [[0;34mInfo[0m]  [0;37mscriptmgr:[0m Running script file '/usr/share/gamescope/scripts/00-gamescope/displays/lenovo.legiongo.lcd.lua' (id: 6)
+[gamescope] [[0;34mInfo[0m]  [0;37mscriptmgr:[0m Running script file '/usr/share/gamescope/scripts/00-gamescope/displays/lenovo.legiongos.lcd.lua' (id: 7)
+[gamescope] [[0;34mInfo[0m]  [0;37mscriptmgr:[0m Running script file '/usr/share/gamescope/scripts/00-gamescope/displays/onexplayer.f1.oled.lua' (id: 8)
+[gamescope] [[0;34mInfo[0m]  [0;37mscriptmgr:[0m Running script file '/usr/share/gamescope/scripts/00-gamescope/displays/valve.steamdeck.lcd.lua' (id: 9)
+[gamescope] [[0;34mInfo[0m]  [0;37mscriptmgr:[0m Running script file '/usr/share/gamescope/scripts/00-gamescope/displays/valve.steamdeck.oled.lua' (id: 10)
+[gamescope] [[0;34mInfo[0m]  [0;37mscriptmgr:[0m Running script file '/usr/share/gamescope/scripts/00-gamescope/displays/zotac.zone.oled.lua' (id: 11)
+[gamescope] [[0;34mInfo[0m]  [0;37mscriptmgr:[0m Loading scripts from: '/etc/gamescope/scripts'
+[gamescope] [[0;33mWarn[0m]  [0;37mscriptmgr:[0m Directory '/etc/gamescope/scripts' does not exist
+[gamescope] [[0;34mInfo[0m]  [0;37mscriptmgr:[0m Loading scripts from: '/home/albetnv/.config/gamescope/scripts'
+[gamescope] [[0;33mWarn[0m]  [0;37mscriptmgr:[0m Directory '/home/albetnv/.config/gamescope/scripts' does not exist
+WARNING: radv is not a conformant Vulkan implementation, testing use only.
+[gamescope] [[0;34mInfo[0m]  [0;37mvulkan:[0m selecting physical device 'AMD Radeon RX 9060 XT (RADV GFX1200)': queue family 1 (general queue family 0)
+[gamescope] [[0;34mInfo[0m]  [0;37mvulkan:[0m physical device supports DRM format modifiers
+Fossilize INFO: Overriding serialization path: "/home/albetnv/.local/share/Steam/steamapps/shadercache/1222680/fozpipelinesv6/steamapprun_pipeline_cache".
+[gamescope] [[0;34mInfo[0m]  [0;37mwlserver:[0m [backend/headless/backend.c:67] Creating headless backend
+[gamescope] [[0;34mInfo[0m]  [0;37mxdg_backend:[0m Seat name: Hyprland
+[gamescope] [[0;34mInfo[0m]  [0;37mxdg_backend:[0m Initted Wayland backend
+[gamescope] [[0;34mInfo[0m]  [0;37mvulkan:[0m supported DRM formats for sampling usage:
+[gamescope] [[0;34mInfo[0m]  [0;37mvulkan:[0m   AR24 (0x34325241)
+[gamescope] [[0;34mInfo[0m]  [0;37mvulkan:[0m   XR24 (0x34325258)
+[gamescope] [[0;34mInfo[0m]  [0;37mvulkan:[0m   AB24 (0x34324241)
+[gamescope] [[0;34mInfo[0m]  [0;37mvulkan:[0m   XB24 (0x34324258)
+[gamescope] [[0;34mInfo[0m]  [0;37mvulkan:[0m   RG16 (0x36314752)
+[gamescope] [[0;34mInfo[0m]  [0;37mvulkan:[0m   AB4H (0x48344241)
+[gamescope] [[0;34mInfo[0m]  [0;37mvulkan:[0m   XB4H (0x48344258)
+[gamescope] [[0;34mInfo[0m]  [0;37mvulkan:[0m   AB48 (0x38344241)
+[gamescope] [[0;34mInfo[0m]  [0;37mvulkan:[0m   XB48 (0x38344258)
+[gamescope] [[0;34mInfo[0m]  [0;37mvulkan:[0m   AB30 (0x30334241)
+[gamescope] [[0;34mInfo[0m]  [0;37mvulkan:[0m   XB30 (0x30334258)
+[gamescope] [[0;34mInfo[0m]  [0;37mvulkan:[0m   AR30 (0x30335241)
+[gamescope] [[0;34mInfo[0m]  [0;37mvulkan:[0m   XR30 (0x30335258)
+[gamescope] [[0;34mInfo[0m]  [0;37mwlserver:[0m Using explicit sync when available
+[gamescope] [[0;34mInfo[0m]  [0;37mwlserver:[0m Running compositor on wayland display 'gamescope-0'
+[gamescope] [[0;34mInfo[0m]  [0;37mwlserver:[0m [backend/headless/backend.c:17] Starting headless backend
+[gamescope] [[0;34mInfo[0m]  [0;37mwlserver:[0m Successfully initialized libei for input emulation!
+[gamescope] [[0;34mInfo[0m]  [0;37mwlserver:[0m [xwayland/server.c:107] Starting Xwayland on :1
 ERROR: ld.so: object '/home/albetnv/.local/share/Steam/ubuntu12_32/gameoverlayrenderer.so' from LD_PRELOAD cannot be preloaded (wrong ELF class: ELFCLASS32): ignored.
-ProtonFixes[38608] INFO: Running protonfixes on "GE-Proton10-34", build at 2026-03-23 03:55:11+00:00.
-ProtonFixes[38608] INFO: Running checks
-ProtonFixes[38608] INFO: All checks successful
-ProtonFixes[38608] INFO: Using early stage global defaults for "Need for Speed™ Heat " (1222680)
-ProtonFixes[38608] INFO: No early stage global protonfix found for "Need for Speed™ Heat " (1222680)
-Proton: Upgrading prefix from 10.1000-200 to GE-Proton10-34 (/home/albetnv/.local/share/Steam/steamapps/compatdata/1222680/)
-Proton: Prefix has an invalid version?! You may want to back up user files and delete this prefix.
-ProtonFixes[38608] INFO: Running protonfixes on "GE-Proton10-34", build at 2026-03-23 03:55:11+00:00.
-ProtonFixes[38608] INFO: Running checks
-ProtonFixes[38608] INFO: All checks successful
-ProtonFixes[38608] INFO: Using main stage global defaults for "Need for Speed™ Heat " (1222680)
-ProtonFixes[38608] INFO: No main stage global protonfix found for "Need for Speed™ Heat " (1222680)
+ERROR: ld.so: object '/home/albetnv/.local/share/Steam/ubuntu12_32/gameoverlayrenderer.so' from LD_PRELOAD cannot be preloaded (wrong ELF class: ELFCLASS32): ignored.
+ERROR: ld.so: object '/home/albetnv/.local/share/Steam/ubuntu12_32/gameoverlayrenderer.so' from LD_PRELOAD cannot be preloaded (wrong ELF class: ELFCLASS32): ignored.
+The XKEYBOARD keymap compiler (xkbcomp) reports:
+> Warning:          Multiple symbols for level 1/group 1 on key <FK23>
+>                   Using F23, ignoring XF86TouchpadOff
+> Warning:          Symbol map for key <FK23> redefined
+>                   Using last definition for conflicting fields
+> Warning:          Symbol map for key <FK24> redefined
+>                   Using last definition for conflicting fields
+Errors from xkbcomp are not fatal to the X server
+[gamescope] [[0;34mInfo[0m]  [0;37mpipewire:[0m stream state changed: connecting
+[gamescope] [[0;34mInfo[0m]  [0;37mpipewire:[0m stream state changed: paused
+[gamescope] [[0;34mInfo[0m]  [0;37mpipewire:[0m stream available on node ID: 67
+[gamescope] [[0;34mInfo[0m]  [0;37mxdg_backend:[0m HDR INFO
+[gamescope] [[0;34mInfo[0m]  [0;37mxdg_backend:[0m   cv_hdr_enabled: false
+[gamescope] [[0;34mInfo[0m]  [0;37mxdg_backend:[0m   uMaxLum: 80, uRefLum: 80
+[gamescope] [[0;34mInfo[0m]  [0;37mxdg_backend:[0m   bExposeHDRSupport: false
+[gamescope] [[0;34mInfo[0m]  [0;37medid:[0m Patching res 800x1280 -> 1920x1080
+[gamescope] [[0;34mInfo[0m]  [0;37mvblank:[0m Using timerfd.
+[gamescope] [[0;34mInfo[0m]  [0;37mxdg_backend:[0m Post-Initted Wayland backend
+ERROR: ld.so: object '/home/albetnv/.local/share/Steam/ubuntu12_32/gameoverlayrenderer.so' from LD_PRELOAD cannot be preloaded (wrong ELF class: ELFCLASS32): ignored.
+ERROR: ld.so: object '/home/albetnv/.local/share/Steam/ubuntu12_32/gameoverlayrenderer.so' from LD_PRELOAD cannot be preloaded (wrong ELF class: ELFCLASS32): ignored.
+ERROR: ld.so: object '/home/albetnv/.local/share/Steam/ubuntu12_32/gameoverlayrenderer.so' from LD_PRELOAD cannot be preloaded (wrong ELF class: ELFCLASS32): ignored.
+ProtonFixes[371294] INFO: Running protonfixes on "GE-Proton10-34", build at 2026-03-23 03:55:11+00:00.
+ProtonFixes[371294] INFO: Running checks
+ProtonFixes[371294] INFO: All checks successful
+ProtonFixes[371294] INFO: Using early stage global defaults for "Need for Speed™ Heat " (1222680)
+ProtonFixes[371294] INFO: No early stage global protonfix found for "Need for Speed™ Heat " (1222680)
+ProtonFixes[371294] INFO: Running protonfixes on "GE-Proton10-34", build at 2026-03-23 03:55:11+00:00.
+ProtonFixes[371294] INFO: Running checks
+ProtonFixes[371294] INFO: All checks successful
+ProtonFixes[371294] INFO: Using main stage global defaults for "Need for Speed™ Heat " (1222680)
+ProtonFixes[371294] INFO: No main stage global protonfix found for "Need for Speed™ Heat " (1222680)
+ERROR: ld.so: object '/home/albetnv/.local/share/Steam/ubuntu12_32/gameoverlayrenderer.so' from LD_PRELOAD cannot be preloaded (wrong ELF class: ELFCLASS32): ignored.
+ERROR: ld.so: object '/home/albetnv/.local/share/Steam/ubuntu12_32/gameoverlayrenderer.so' from LD_PRELOAD cannot be preloaded (wrong ELF class: ELFCLASS32): ignored.
+The XKEYBOARD keymap compiler (xkbcomp) reports:
+> Warning:          Unsupported maximum keycode 709, clipping.
+>                   X11 cannot support keycodes above 255.
+> Warning:          Virtual modifier Hyper multiply defined
+>                   Using 0, ignoring 0
+> Warning:          Virtual modifier ScrollLock multiply defined
+>                   Using 0, ignoring 0
+[gamescope] [[0;34mInfo[0m]  [0;37mxdg_backend:[0m HDR INFO
+[gamescope] [[0;34mInfo[0m]  [0;37mxdg_backend:[0m   cv_hdr_enabled: false
+[gamescope] [[0;34mInfo[0m]  [0;37mxdg_backend:[0m   uMaxLum: 80, uRefLum: 80
+[gamescope] [[0;34mInfo[0m]  [0;37mxdg_backend:[0m   bExposeHDRSupport: false
+Errors from xkbcomp are not fatal to the X server
 wineserver: NTSync up and running!
+ATTENTION: default value of option vk_xwayland_wait_ready overridden by environment.
+[Gamescope WSI] Application info:
+  pApplicationName: (null)
+  applicationVersion: 0
+  pEngineName: (null)
+  engineVersion: 0
+  apiVersion: 4198400
+[Gamescope WSI] Executable name: explorer.exe
 WARNING: radv is not a conformant Vulkan implementation, testing use only.
+ATTENTION: default value of option vk_xwayland_wait_ready overridden by environment.
+ATTENTION: default value of option vk_wsi_force_swapchain_to_current_extent overridden by environment.
+[Gamescope WSI] Application info:
+  pApplicationName: xalia.exe
+  applicationVersion: 0
+  pEngineName: DXVK
+  engineVersion: 12582912
+  apiVersion: 4206592
+[Gamescope WSI] Executable name: xalia.exe
 WARNING: radv is not a conformant Vulkan implementation, testing use only.
+ATTENTION: default value of option vk_xwayland_wait_ready overridden by environment.
+ATTENTION: default value of option vk_wsi_force_swapchain_to_current_extent overridden by environment.
+[Gamescope WSI] Application info:
+  pApplicationName: (null)
+  applicationVersion: 0
+  pEngineName: (null)
+  engineVersion: 0
+  apiVersion: 4198400
 WARNING: radv is not a conformant Vulkan implementation, testing use only.
+ATTENTION: default value of option vk_xwayland_wait_ready overridden by environment.
+[Gamescope WSI] Application info:
+  pApplicationName: Link2EA.exe
+  applicationVersion: 0
+  pEngineName: DXVK
+  engineVersion: 12582912
+  apiVersion: 4206592
+[Gamescope WSI] Executable name: Link2EA.exe
 WARNING: radv is not a conformant Vulkan implementation, testing use only.
+ATTENTION: default value of option vk_xwayland_wait_ready overridden by environment.
+ATTENTION: default value of option vk_wsi_force_swapchain_to_current_extent overridden by environment.
+[Gamescope WSI] Application info:
+  pApplicationName: (null)
+  applicationVersion: 0
+  pEngineName: (null)
+  engineVersion: 0
+  apiVersion: 4198400
 WARNING: radv is not a conformant Vulkan implementation, testing use only.
+ATTENTION: default value of option vk_xwayland_wait_ready overridden by environment.
+ATTENTION: default value of option vk_wsi_force_swapchain_to_current_extent overridden by environment.
+[Gamescope WSI] Application info:
+  pApplicationName: Link2EA.exe
+  applicationVersion: 0
+  pEngineName: DXVK
+  engineVersion: 12582912
+  apiVersion: 4206592
 WARNING: radv is not a conformant Vulkan implementation, testing use only.
+ATTENTION: default value of option vk_xwayland_wait_ready overridden by environment.
+ATTENTION: default value of option vk_wsi_force_swapchain_to_current_extent overridden by environment.
+[Gamescope WSI] Application info:
+  pApplicationName: Link2EA.exe
+  applicationVersion: 0
+  pEngineName: DXVK
+  engineVersion: 12582912
+  apiVersion: 4206592
 WARNING: radv is not a conformant Vulkan implementation, testing use only.
+ATTENTION: default value of option vk_xwayland_wait_ready overridden by environment.
+ATTENTION: default value of option vk_wsi_force_swapchain_to_current_extent overridden by environment.
+[Gamescope WSI] Application info:
+  pApplicationName: EACefSubProcess.exe
+  applicationVersion: 0
+  pEngineName: DXVK
+  engineVersion: 12582912
+  apiVersion: 4206592
+[Gamescope WSI] Executable name: EACefSubProcess.exe
 WARNING: radv is not a conformant Vulkan implementation, testing use only.
-WARNING: radv is not a conformant Vulkan implementation, testing use only.
-WARNING: radv is not a conformant Vulkan implementation, testing use only.
+[Gamescope WSI] Forcing on VK_EXT_swapchain_maintenance1.
 Fossilize INFO: Overriding serialization path: "/home/albetnv/.local/share/Steam/steamapps/shadercache/1222680/fozpipelinesv6/steamapprun_pipeline_cache".
+ATTENTION: default value of option vk_xwayland_wait_ready overridden by environment.
+ATTENTION: default value of option vk_wsi_force_swapchain_to_current_extent overridden by environment.
+[Gamescope WSI] Application info:
+  pApplicationName: (null)
+  applicationVersion: 0
+  pEngineName: (null)
+  engineVersion: 0
+  apiVersion: 4198400
 WARNING: radv is not a conformant Vulkan implementation, testing use only.
+ATTENTION: default value of option vk_xwayland_wait_ready overridden by environment.
+ATTENTION: default value of option vk_wsi_force_swapchain_to_current_extent overridden by environment.
+[Gamescope WSI] Application info:
+  pApplicationName: EACefSubProcess.exe
+  applicationVersion: 0
+  pEngineName: DXVK
+  engineVersion: 12582912
+  apiVersion: 4206592
 WARNING: radv is not a conformant Vulkan implementation, testing use only.
+[Gamescope WSI] Forcing on VK_EXT_swapchain_maintenance1.
 Fossilize INFO: Overriding serialization path: "/home/albetnv/.local/share/Steam/steamapps/shadercache/1222680/fozpipelinesv6/steamapprun_pipeline_cache".
+ATTENTION: default value of option vk_xwayland_wait_ready overridden by environment.
+ATTENTION: default value of option vk_wsi_force_swapchain_to_current_extent overridden by environment.
+[Gamescope WSI] Application info:
+  pApplicationName: Link2EA.exe
+  applicationVersion: 1
+  pEngineName: DXVK
+  engineVersion: 12582912
+  apiVersion: 4206592
 WARNING: radv is not a conformant Vulkan implementation, testing use only.
+[gamescope] [[0;33mWarn[0m]  [0;37mxwm:[0m got the same buffer committed twice, ignoring.
 info:  Game: EABackgroundService.exe
 info:  DXVK: v2.7.1-509-g1676dcaf342a9b1
 info:  Build: x86_64 gcc 14.2.0
-info:  Vulkan: Found vkGetInstanceProcAddr in winevulkan.dll @ 0x6ffffd16fbf0
+info:  Vulkan: Found vkGetInstanceProcAddr in winevulkan.dll @ 0x6ffffb4afbf0
 info:  Extension providers:
 info:    Platform WSI
 info:    OpenVR
@@ -42,11 +217,40 @@ info:    VK_KHR_get_surface_capabilities2
 info:    VK_KHR_surface
 info:    VK_KHR_surface_maintenance1
 info:    VK_KHR_win32_surface
+ATTENTION: default value of option vk_xwayland_wait_ready overridden by environment.
+[Gamescope WSI] Application info:
+  pApplicationName: EABackgroundService.exe
+  applicationVersion: 0
+  pEngineName: DXVK
+  engineVersion: 12582912
+  apiVersion: 4206592
+[Gamescope WSI] Executable name: EABackgroundService.exe
 WARNING: radv is not a conformant Vulkan implementation, testing use only.
+ATTENTION: default value of option vk_xwayland_wait_ready overridden by environment.
+ATTENTION: default value of option vk_wsi_force_swapchain_to_current_extent overridden by environment.
+[Gamescope WSI] Application info:
+  pApplicationName: (null)
+  applicationVersion: 0
+  pEngineName: (null)
+  engineVersion: 0
+  apiVersion: 4198400
 WARNING: radv is not a conformant Vulkan implementation, testing use only.
 info:  Found device: AMD Radeon RX 9060 XT (RADV GFX1200) (radv 26.0.4)
 warn:  OpenXR: Unable to get required Vulkan Device extensions size
+[Gamescope WSI] Creating Gamescope surface: xid: 0x2000b1f
+[Gamescope WSI] Atom of T was wrong type. Expected XCB_ATOM_CARDINAL.
+[Gamescope WSI] Made gamescope surface for xid: 0x2000b1f
+[Gamescope WSI] Surface state:
+  steam app id:                  1182480
+  window xid:                    0x2000b1f
+  wayland surface res id:        5
+  layer client flags:            0x4
+  server hdr output enabled:     false
+  hdr formats exposed to client: false
+[Gamescope WSI] Creating swapchain for xid: 0x2000b1f - oldSwapchain: (nil) - provided minImageCount: 4 - minImageCount: 4 - format: VK_FORMAT_R8G8B8A8_UNORM - colorspace: VK_COLOR_SPACE_SRGB_NONLINEAR_KHR - flip: true
+[Gamescope WSI] Created swapchain for xid: 0x2000b1f swapchain: 0x555594418550 - imageCount: 4
 Unhandled exception in Xalia:
+[Gamescope WSI] Swapchain received new refresh cycle: 16.67ms
 System.Threading.Tasks.TaskCanceledException: A task was canceled.
   at Xalia.Win32.CommandThread.OnBackgroundThread[T] (System.Func`1[TResult] func, Xalia.Win32.CommandThreadPriority priority) [0x000d1] in <743e8bdcd9c54484ad89463ed4e626f6>:0 
   at Xalia.Win32.NonclientScrollProvider.RefreshScrollInfo () [0x0009c] in <743e8bdcd9c54484ad89463ed4e626f6>:0 
@@ -59,54 +263,403 @@ System.Threading.Tasks.TaskCanceledException: A task was canceled.
 Unhandled exception in Xalia:
 System.Threading.Tasks.TaskCanceledException: A task was canceled.
   at Xalia.Win32.CommandThread.OnBackgroundThread[T] (System.Func`1[TResult] func, Xalia.Win32.CommandThreadPriority priority) [0x000d1] in <743e8bdcd9c54484ad89463ed4e626f6>:0 
-  at Xalia.Win32.NonclientScrollProvider.RefreshScrollBarInfo () [0x000b7] in <743e8bdcd9c54484ad89463ed4e626f6>:0 
-  at Xalia.Utils.DoRunTask (System.Object o) [0x00063] in <743e8bdcd9c54484ad89463ed4e626f6>:0 
-Unhandled exception in Xalia:
-System.Threading.Tasks.TaskCanceledException: A task was canceled.
-  at Xalia.Win32.CommandThread.OnBackgroundThread[T] (System.Func`1[TResult] func, Xalia.Win32.CommandThreadPriority priority) [0x000d1] in <743e8bdcd9c54484ad89463ed4e626f6>:0 
-  at Xalia.Win32.NonclientScrollProvider.RefreshScrollBarInfo () [0x000b7] in <743e8bdcd9c54484ad89463ed4e626f6>:0 
-  at Xalia.Utils.DoRunTask (System.Object o) [0x00063] in <743e8bdcd9c54484ad89463ed4e626f6>:0 
-Unhandled exception in Xalia:
-System.Threading.Tasks.TaskCanceledException: A task was canceled.
-  at Xalia.Win32.CommandThread.OnBackgroundThread[T] (System.Func`1[TResult] func, Xalia.Win32.CommandThreadPriority priority) [0x000d1] in <743e8bdcd9c54484ad89463ed4e626f6>:0 
-  at Xalia.Win32.NonclientScrollProvider.RefreshScrollBarInfo () [0x000b7] in <743e8bdcd9c54484ad89463ed4e626f6>:0 
-  at Xalia.Utils.DoRunTask (System.Object o) [0x00063] in <743e8bdcd9c54484ad89463ed4e626f6>:0 
-Unhandled exception in Xalia:
-System.Threading.Tasks.TaskCanceledException: A task was canceled.
-  at Xalia.Win32.CommandThread.OnBackgroundThread[T] (System.Func`1[TResult] func, Xalia.Win32.CommandThreadPriority priority) [0x000d1] in <743e8bdcd9c54484ad89463ed4e626f6>:0 
   at Xalia.Win32.NonclientScrollProvider.RefreshScrollInfo () [0x0009c] in <743e8bdcd9c54484ad89463ed4e626f6>:0 
   at Xalia.Utils.DoRunTask (System.Object o) [0x00063] in <743e8bdcd9c54484ad89463ed4e626f6>:0 
+[Gamescope WSI] Creating Gamescope surface: xid: 0x2800023
+[Gamescope WSI] Atom of T was wrong type. Expected XCB_ATOM_CARDINAL.
+[Gamescope WSI] Made gamescope surface for xid: 0x2800023
+[Gamescope WSI] Surface state:
+  steam app id:                  1222680
+  window xid:                    0x2800023
+  wayland surface res id:        5
+  layer client flags:            0x4
+  server hdr output enabled:     false
+  hdr formats exposed to client: false
+[Gamescope WSI] Creating Gamescope surface: xid: 0x2800024
+[Gamescope WSI] Atom of T was wrong type. Expected XCB_ATOM_CARDINAL.
+[Gamescope WSI] Made gamescope surface for xid: 0x2800024
+[Gamescope WSI] Surface state:
+  steam app id:                  1222680
+  window xid:                    0x2800024
+  wayland surface res id:        9
+  layer client flags:            0x4
+  server hdr output enabled:     false
+  hdr formats exposed to client: false
+[Gamescope WSI] Creating swapchain for xid: 0x2800024 - oldSwapchain: (nil) - provided minImageCount: 4 - minImageCount: 4 - format: VK_FORMAT_B8G8R8A8_UNORM - colorspace: VK_COLOR_SPACE_SRGB_NONLINEAR_KHR - flip: false
+ATTENTION: default value of option vk_xwayland_wait_ready overridden by environment.
+ATTENTION: default value of option vk_wsi_force_swapchain_to_current_extent overridden by environment.
+[Gamescope WSI] Created swapchain for xid: 0x2800024 swapchain: 0x55556ce6f510 - imageCount: 4
+[Gamescope WSI] Application info:
+  pApplicationName: EALaunchHelper.exe
+  applicationVersion: 0
+  pEngineName: DXVK
+  engineVersion: 12582912
+  apiVersion: 4206592
+[Gamescope WSI] Executable name: EALaunchHelper.exe
 WARNING: radv is not a conformant Vulkan implementation, testing use only.
+ATTENTION: default value of option vk_xwayland_wait_ready overridden by environment.
+ATTENTION: default value of option vk_wsi_force_swapchain_to_current_extent overridden by environment.
+[Gamescope WSI] Application info:
+  pApplicationName: (null)
+  applicationVersion: 0
+  pEngineName: (null)
+  engineVersion: 0
+  apiVersion: 4198400
 WARNING: radv is not a conformant Vulkan implementation, testing use only.
+ATTENTION: default value of option vk_xwayland_wait_ready overridden by environment.
+ATTENTION: default value of option vk_wsi_force_swapchain_to_current_extent overridden by environment.
+[Gamescope WSI] Application info:
+  pApplicationName: EALaunchHelper.exe
+  applicationVersion: 0
+  pEngineName: DXVK
+  engineVersion: 12582912
+  apiVersion: 4206592
 WARNING: radv is not a conformant Vulkan implementation, testing use only.
+ATTENTION: default value of option vk_xwayland_wait_ready overridden by environment.
+ATTENTION: default value of option vk_wsi_force_swapchain_to_current_extent overridden by environment.
+[Gamescope WSI] Application info:
+  pApplicationName: EALaunchHelper.exe
+  applicationVersion: 0
+  pEngineName: DXVK
+  engineVersion: 12582912
+  apiVersion: 4206592
 WARNING: radv is not a conformant Vulkan implementation, testing use only.
-WARNING: radv is not a conformant Vulkan implementation, testing use only.
+[Gamescope WSI] Forcing on VK_EXT_swapchain_maintenance1.
 Fossilize INFO: Overriding serialization path: "/home/albetnv/.local/share/Steam/steamapps/shadercache/1222680/fozpipelinesv6/steamapprun_pipeline_cache".
+ATTENTION: default value of option vk_xwayland_wait_ready overridden by environment.
+ATTENTION: default value of option vk_wsi_force_swapchain_to_current_extent overridden by environment.
+[Gamescope WSI] Application info:
+  pApplicationName: EADesktop.exe
+  applicationVersion: 0
+  pEngineName: DXVK
+  engineVersion: 12582912
+  apiVersion: 4206592
+[Gamescope WSI] Executable name: EADesktop.exe
 WARNING: radv is not a conformant Vulkan implementation, testing use only.
+ATTENTION: default value of option vk_xwayland_wait_ready overridden by environment.
+ATTENTION: default value of option vk_wsi_force_swapchain_to_current_extent overridden by environment.
+[Gamescope WSI] Application info:
+  pApplicationName: (null)
+  applicationVersion: 0
+  pEngineName: (null)
+  engineVersion: 0
+  apiVersion: 4198400
 WARNING: radv is not a conformant Vulkan implementation, testing use only.
+ATTENTION: default value of option vk_xwayland_wait_ready overridden by environment.
+ATTENTION: default value of option vk_wsi_force_swapchain_to_current_extent overridden by environment.
+[Gamescope WSI] Application info:
+  pApplicationName: EADesktop.exe
+  applicationVersion: 0
+  pEngineName: DXVK
+  engineVersion: 12582912
+  apiVersion: 4206592
 WARNING: radv is not a conformant Vulkan implementation, testing use only.
+ATTENTION: default value of option vk_xwayland_wait_ready overridden by environment.
+ATTENTION: default value of option vk_wsi_force_swapchain_to_current_extent overridden by environment.
+[Gamescope WSI] Application info:
+  pApplicationName: EADesktop.exe
+  applicationVersion: 0
+  pEngineName: DXVK
+  engineVersion: 12582912
+  apiVersion: 4206592
+WARNING: radv is not a conformant Vulkan implementation, testing use only.
+[Gamescope WSI] Forcing on VK_EXT_swapchain_maintenance1.
 Fossilize INFO: Overriding serialization path: "/home/albetnv/.local/share/Steam/steamapps/shadercache/1222680/fozpipelinesv6/steamapprun_pipeline_cache".
+ATTENTION: default value of option vk_xwayland_wait_ready overridden by environment.
+ATTENTION: default value of option vk_wsi_force_swapchain_to_current_extent overridden by environment.
+[Gamescope WSI] Application info:
+  pApplicationName: EACefSubProcess.exe
+  applicationVersion: 0
+  pEngineName: DXVK
+  engineVersion: 12582912
+  apiVersion: 4206592
+[Gamescope WSI] Executable name: EACefSubProcess.exe
 WARNING: radv is not a conformant Vulkan implementation, testing use only.
+ATTENTION: default value of option vk_xwayland_wait_ready overridden by environment.
+ATTENTION: default value of option vk_wsi_force_swapchain_to_current_extent overridden by environment.
+[Gamescope WSI] Application info:
+  pApplicationName: (null)
+  applicationVersion: 0
+  pEngineName: (null)
+  engineVersion: 0
+  apiVersion: 4198400
 WARNING: radv is not a conformant Vulkan implementation, testing use only.
+ATTENTION: default value of option vk_xwayland_wait_ready overridden by environment.
+ATTENTION: default value of option vk_wsi_force_swapchain_to_current_extent overridden by environment.
+[Gamescope WSI] Application info:
+  pApplicationName: EACefSubProcess.exe
+  applicationVersion: 0
+  pEngineName: DXVK
+  engineVersion: 12582912
+  apiVersion: 4206592
 WARNING: radv is not a conformant Vulkan implementation, testing use only.
-WARNING: radv is not a conformant Vulkan implementation, testing use only.
+[Gamescope WSI] Forcing on VK_EXT_swapchain_maintenance1.
 Fossilize INFO: Overriding serialization path: "/home/albetnv/.local/share/Steam/steamapps/shadercache/1222680/fozpipelinesv6/steamapprun_pipeline_cache".
+ATTENTION: default value of option vk_xwayland_wait_ready overridden by environment.
+ATTENTION: default value of option vk_wsi_force_swapchain_to_current_extent overridden by environment.
+[Gamescope WSI] Application info:
+  pApplicationName: EADesktop.exe
+  applicationVersion: 1
+  pEngineName: DXVK
+  engineVersion: 12582912
+  apiVersion: 4206592
 WARNING: radv is not a conformant Vulkan implementation, testing use only.
+[gamescope] [[0;33mWarn[0m]  [0;37mxwm:[0m got the same buffer committed twice, ignoring.
+[Gamescope WSI] Destroying swapchain: 0x555594418550
+[Gamescope WSI] Destroyed swapchain: 0x555594418550
+[Gamescope WSI] Destroying swapchain: 0x55556ce6f510
+[Gamescope WSI] Destroyed swapchain: 0x55556ce6f510
+[Gamescope WSI] Creating Gamescope surface: xid: 0x5600b3b
+[Gamescope WSI] Atom of T was wrong type. Expected XCB_ATOM_CARDINAL.
+[Gamescope WSI] Made gamescope surface for xid: 0x5600b3b
+[Gamescope WSI] Surface state:
+  steam app id:                  1222680
+  window xid:                    0x5600b3b
+  wayland surface res id:        5
+  layer client flags:            0x4
+  server hdr output enabled:     false
+  hdr formats exposed to client: false
+[Gamescope WSI] Creating swapchain for xid: 0x5600b3b - oldSwapchain: (nil) - provided minImageCount: 4 - minImageCount: 4 - format: VK_FORMAT_R8G8B8A8_UNORM - colorspace: VK_COLOR_SPACE_SRGB_NONLINEAR_KHR - flip: true
+[Gamescope WSI] Created swapchain for xid: 0x5600b3b swapchain: 0x555593e79950 - imageCount: 4
+[Gamescope WSI] Creating Gamescope surface: xid: 0x6200023
+[Gamescope WSI] Atom of T was wrong type. Expected XCB_ATOM_CARDINAL.
+[Gamescope WSI] Made gamescope surface for xid: 0x6200023
+[Gamescope WSI] Surface state:
+  steam app id:                  1222680
+  window xid:                    0x6200023
+  wayland surface res id:        5
+  layer client flags:            0x4
+  server hdr output enabled:     false
+  hdr formats exposed to client: false
+[Gamescope WSI] Creating Gamescope surface: xid: 0x5600b6d
+[Gamescope WSI] Swapchain received new refresh cycle: 16.67ms
+[Gamescope WSI] Atom of T was wrong type. Expected XCB_ATOM_CARDINAL.
+[Gamescope WSI] Made gamescope surface for xid: 0x5600b6d
+[Gamescope WSI] Surface state:
+  steam app id:                  1222680
+  window xid:                    0x5600b6d
+  wayland surface res id:        40
+  layer client flags:            0x4
+  server hdr output enabled:     false
+  hdr formats exposed to client: false
+[Gamescope WSI] Creating Gamescope surface: xid: 0x5600b88
+[Gamescope WSI] Atom of T was wrong type. Expected XCB_ATOM_CARDINAL.
+[Gamescope WSI] Made gamescope surface for xid: 0x5600b88
+[Gamescope WSI] Surface state:
+  steam app id:                  1222680
+  window xid:                    0x5600b88
+  wayland surface res id:        48
+  layer client flags:            0x4
+  server hdr output enabled:     false
+  hdr formats exposed to client: false
+[Gamescope WSI] Destroying swapchain: 0x555593e79950
+[Gamescope WSI] Destroyed swapchain: 0x555593e79950
+ATTENTION: default value of option vk_xwayland_wait_ready overridden by environment.
+ATTENTION: default value of option vk_wsi_force_swapchain_to_current_extent overridden by environment.
+[Gamescope WSI] Application info:
+  pApplicationName: EADesktop.exe
+  applicationVersion: 0
+  pEngineName: DXVK
+  engineVersion: 12582912
+  apiVersion: 4206592
+[Gamescope WSI] Executable name: EADesktop.exe
 WARNING: radv is not a conformant Vulkan implementation, testing use only.
+ATTENTION: default value of option vk_xwayland_wait_ready overridden by environment.
+ATTENTION: default value of option vk_wsi_force_swapchain_to_current_extent overridden by environment.
+[Gamescope WSI] Application info:
+  pApplicationName: (null)
+  applicationVersion: 0
+  pEngineName: (null)
+  engineVersion: 0
+  apiVersion: 4198400
 WARNING: radv is not a conformant Vulkan implementation, testing use only.
+ATTENTION: default value of option vk_xwayland_wait_ready overridden by environment.
+ATTENTION: default value of option vk_wsi_force_swapchain_to_current_extent overridden by environment.
+[Gamescope WSI] Application info:
+  pApplicationName: EADesktop.exe
+  applicationVersion: 0
+  pEngineName: DXVK
+  engineVersion: 12582912
+  apiVersion: 4206592
+WARNING: radv is not a conformant Vulkan implementation, testing use only.
+ATTENTION: default value of option vk_xwayland_wait_ready overridden by environment.
+ATTENTION: default value of option vk_wsi_force_swapchain_to_current_extent overridden by environment.
+[Gamescope WSI] Application info:
+  pApplicationName: EADesktop.exe
+  applicationVersion: 0
+  pEngineName: DXVK
+  engineVersion: 12582912
+  apiVersion: 4206592
+WARNING: radv is not a conformant Vulkan implementation, testing use only.
+[Gamescope WSI] Forcing on VK_EXT_swapchain_maintenance1.
 Fossilize INFO: Overriding serialization path: "/home/albetnv/.local/share/Steam/steamapps/shadercache/1222680/fozpipelinesv6/steamapprun_pipeline_cache".
+ATTENTION: default value of option vk_xwayland_wait_ready overridden by environment.
+ATTENTION: default value of option vk_wsi_force_swapchain_to_current_extent overridden by environment.
+[Gamescope WSI] Application info:
+  pApplicationName: EACefSubProcess.exe
+  applicationVersion: 0
+  pEngineName: DXVK
+  engineVersion: 12582912
+  apiVersion: 4206592
+[Gamescope WSI] Executable name: EACefSubProcess.exe
+WARNING: radv is not a conformant Vulkan implementation, testing use only.
+ATTENTION: default value of option vk_xwayland_wait_ready overridden by environment.
+ATTENTION: default value of option vk_wsi_force_swapchain_to_current_extent overridden by environment.
+[Gamescope WSI] Application info:
+  pApplicationName: (null)
+  applicationVersion: 0
+  pEngineName: (null)
+  engineVersion: 0
+  apiVersion: 4198400
+WARNING: radv is not a conformant Vulkan implementation, testing use only.
+ATTENTION: default value of option vk_xwayland_wait_ready overridden by environment.
+ATTENTION: default value of option vk_wsi_force_swapchain_to_current_extent overridden by environment.
+[Gamescope WSI] Application info:
+  pApplicationName: EACefSubProcess.exe
+  applicationVersion: 0
+  pEngineName: DXVK
+  engineVersion: 12582912
+  apiVersion: 4206592
+WARNING: radv is not a conformant Vulkan implementation, testing use only.
+info:  Game: EABackgroundService.exe
+info:  DXVK: v2.7.1-509-g1676dcaf342a9b1
+info:  Build: x86_64 gcc 14.2.0
+info:  Vulkan: Found vkGetInstanceProcAddr in winevulkan.dll @ 0x6ffffb4afbf0
+info:  Extension providers:
+info:    Platform WSI
+info:    OpenVR
+info:    OpenXR
+warn:  OpenXR: Unable to get required Vulkan instance extensions size
+info:  Enabled instance extensions:
+info:    VK_KHR_get_surface_capabilities2
+info:    VK_KHR_surface
+info:    VK_KHR_surface_maintenance1
+info:    VK_KHR_win32_surface
+ATTENTION: default value of option vk_xwayland_wait_ready overridden by environment.
+[Gamescope WSI] Application info:
+  pApplicationName: EABackgroundService.exe
+  applicationVersion: 0
+  pEngineName: DXVK
+  engineVersion: 12582912
+  apiVersion: 4206592
+[Gamescope WSI] Executable name: EABackgroundService.exe
+WARNING: radv is not a conformant Vulkan implementation, testing use only.
+[Gamescope WSI] Forcing on VK_EXT_swapchain_maintenance1.
 Fossilize INFO: Overriding serialization path: "/home/albetnv/.local/share/Steam/steamapps/shadercache/1222680/fozpipelinesv6/steamapprun_pipeline_cache".
+ATTENTION: default value of option vk_xwayland_wait_ready overridden by environment.
+ATTENTION: default value of option vk_wsi_force_swapchain_to_current_extent overridden by environment.
+[Gamescope WSI] Application info:
+  pApplicationName: (null)
+  applicationVersion: 0
+  pEngineName: (null)
+  engineVersion: 0
+  apiVersion: 4198400
 WARNING: radv is not a conformant Vulkan implementation, testing use only.
-Fossilize INFO: Overriding serialization path: "/home/albetnv/.local/share/Steam/steamapps/shadercache/1222680/fozpipelinesv6/steamapprun_pipeline_cache".
+info:  Found device: AMD Radeon RX 9060 XT (RADV GFX1200) (radv 26.0.4)
+warn:  OpenXR: Unable to get required Vulkan Device extensions size
+ATTENTION: default value of option vk_xwayland_wait_ready overridden by environment.
+ATTENTION: default value of option vk_wsi_force_swapchain_to_current_extent overridden by environment.
+[Gamescope WSI] Application info:
+  pApplicationName: EADesktop.exe
+  applicationVersion: 1
+  pEngineName: DXVK
+  engineVersion: 12582912
+  apiVersion: 4206592
 WARNING: radv is not a conformant Vulkan implementation, testing use only.
+[Gamescope WSI] Creating Gamescope surface: xid: 0x2000ab8
+[Gamescope WSI] Atom of T was wrong type. Expected XCB_ATOM_CARDINAL.
+[Gamescope WSI] Made gamescope surface for xid: 0x2000ab8
+[Gamescope WSI] Surface state:
+  steam app id:                  1222680
+  window xid:                    0x2000ab8
+  wayland surface res id:        5
+  layer client flags:            0x4
+  server hdr output enabled:     false
+  hdr formats exposed to client: false
+[Gamescope WSI] Creating swapchain for xid: 0x2000ab8 - oldSwapchain: (nil) - provided minImageCount: 4 - minImageCount: 4 - format: VK_FORMAT_R8G8B8A8_UNORM - colorspace: VK_COLOR_SPACE_SRGB_NONLINEAR_KHR - flip: true
+[Gamescope WSI] Created swapchain for xid: 0x2000ab8 swapchain: 0x55556d485960 - imageCount: 4
+[Gamescope WSI] Swapchain received new refresh cycle: 16.67ms
+[Gamescope WSI] Destroying swapchain: 0x55556d485960
+[Gamescope WSI] Destroyed swapchain: 0x55556d485960
+ATTENTION: default value of option vk_xwayland_wait_ready overridden by environment.
+ATTENTION: default value of option vk_wsi_force_swapchain_to_current_extent overridden by environment.
+[Gamescope WSI] Application info:
+  pApplicationName: EADesktop.exe
+  applicationVersion: 1
+  pEngineName: DXVK
+  engineVersion: 12582912
+  apiVersion: 4206592
 WARNING: radv is not a conformant Vulkan implementation, testing use only.
+ATTENTION: default value of option vk_xwayland_wait_ready overridden by environment.
+ATTENTION: default value of option vk_wsi_force_swapchain_to_current_extent overridden by environment.
+[Gamescope WSI] Application info:
+  pApplicationName: EALocalHostSvc.exe
+  applicationVersion: 0
+  pEngineName: DXVK
+  engineVersion: 12582912
+  apiVersion: 4206592
+[Gamescope WSI] Executable name: EALocalHostSvc.exe
 WARNING: radv is not a conformant Vulkan implementation, testing use only.
-Fossilize INFO: Overriding serialization path: "/home/albetnv/.local/share/Steam/steamapps/shadercache/1222680/fozpipelinesv6/steamapprun_pipeline_cache".
+ATTENTION: default value of option vk_xwayland_wait_ready overridden by environment.
+ATTENTION: default value of option vk_wsi_force_swapchain_to_current_extent overridden by environment.
+[Gamescope WSI] Application info:
+  pApplicationName: (null)
+  applicationVersion: 0
+  pEngineName: (null)
+  engineVersion: 0
+  apiVersion: 4198400
 WARNING: radv is not a conformant Vulkan implementation, testing use only.
-WARNING: radv is not a conformant Vulkan implementation, testing use only.
-WARNING: radv is not a conformant Vulkan implementation, testing use only.
-WARNING: radv is not a conformant Vulkan implementation, testing use only.
-WARNING: radv is not a conformant Vulkan implementation, testing use only.
-WARNING: radv is not a conformant Vulkan implementation, testing use only.
-Fossilize INFO: Overriding serialization path: "/home/albetnv/.local/share/Steam/steamapps/shadercache/1222680/fozpipelinesv6/steamapprun_pipeline_cache".
-pid 38626 != 38625, skipping destruction (fork without exec?)
+[Gamescope WSI] Forcing on VK_EXT_swapchain_maintenance1.
+[gamescope] [[0;33mWarn[0m]  [0;37mxwm:[0m got the same buffer committed twice, ignoring.
+[Gamescope WSI] Creating Gamescope surface: xid: 0x2e00023
+[Gamescope WSI] Atom of T was wrong type. Expected XCB_ATOM_CARDINAL.
+[Gamescope WSI] Made gamescope surface for xid: 0x2e00023
+[Gamescope WSI] Surface state:
+  steam app id:                  1222680
+  window xid:                    0x2e00023
+  wayland surface res id:        5
+  layer client flags:            0x4
+  server hdr output enabled:     false
+  hdr formats exposed to client: false
+[Gamescope WSI] Creating Gamescope surface: xid: 0x2e00024
+[Gamescope WSI] Atom of T was wrong type. Expected XCB_ATOM_CARDINAL.
+[Gamescope WSI] Made gamescope surface for xid: 0x2e00024
+[Gamescope WSI] Surface state:
+  steam app id:                  1222680
+  window xid:                    0x2e00024
+  wayland surface res id:        9
+  layer client flags:            0x4
+  server hdr output enabled:     false
+  hdr formats exposed to client: false
+[Gamescope WSI] Creating swapchain for xid: 0x2e00024 - oldSwapchain: (nil) - provided minImageCount: 4 - minImageCount: 4 - format: VK_FORMAT_B8G8R8A8_UNORM - colorspace: VK_COLOR_SPACE_SRGB_NONLINEAR_KHR - flip: false
+[Gamescope WSI] Created swapchain for xid: 0x2e00024 swapchain: 0x555583c1eed0 - imageCount: 4
+[Gamescope WSI] Creating Gamescope surface: xid: 0x2000b77
+[Gamescope WSI] Atom of T was wrong type. Expected XCB_ATOM_CARDINAL.
+[Gamescope WSI] Made gamescope surface for xid: 0x2000b77
+[Gamescope WSI] Surface state:
+  steam app id:                  1222680
+  window xid:                    0x2000b77
+  wayland surface res id:        10
+  layer client flags:            0x4
+  server hdr output enabled:     false
+  hdr formats exposed to client: false
+[gamescope] [[0;33mWarn[0m]  [0;37mxwm:[0m got the same buffer committed twice, ignoring.
+[Gamescope WSI] Creating swapchain for xid: 0x2000b77 - oldSwapchain: (nil) - provided minImageCount: 4 - minImageCount: 4 - format: VK_FORMAT_B8G8R8A8_UNORM - colorspace: VK_COLOR_SPACE_SRGB_NONLINEAR_KHR - flip: false
+[Gamescope WSI] Created swapchain for xid: 0x2000b77 swapchain: 0x55556da850f0 - imageCount: 4
+[Gamescope WSI] Destroying swapchain: 0x55556da850f0
+[Gamescope WSI] Destroyed swapchain: 0x55556da850f0
+[Gamescope WSI] Destroying swapchain: 0x555583c1eed0
+[Gamescope WSI] Destroyed swapchain: 0x555583c1eed0
+[Gamescope WSI] Creating Gamescope surface: xid: 0x2000c02
+[Gamescope WSI] Atom of T was wrong type. Expected XCB_ATOM_CARDINAL.
+[Gamescope WSI] Made gamescope surface for xid: 0x2000c02
+[Gamescope WSI] Surface state:
+  steam app id:                  1222680
+  window xid:                    0x2000c02
+  wayland surface res id:        5
+  layer client flags:            0x4
+  server hdr output enabled:     false
+  hdr formats exposed to client: false
+pid 371317 != 371316, skipping destruction (fork without exec?)
+[gamescope] [[0;34mInfo[0m]  [0;37mlaunch:[0m Primary child shut down!
+(EE) failed to read Wayland events: Broken pipe
