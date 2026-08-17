@@ -13,7 +13,7 @@ local browser     = "brave"
 local ss_dir      = os.getenv("HOME") .. "/Pictures/Screenshots"
 
 local function ipc(cmd)
-  return hl.dsp.exec_cmd("qs -c noctalia-shell ipc call " .. cmd)
+  return hl.dsp.exec_cmd("noctalia msg " .. cmd)
 end
 
 -- ──────────────────────────────────────────────
@@ -198,28 +198,28 @@ hl.gesture({
 -- ──────────────────────────────────────────────
 
 -- ── Apps & Launcher ───────────────────────────
-hl.bind("SUPER + SPACE", ipc("launcher toggle"))
+hl.bind("SUPER + SPACE", ipc("panel-toggle launcher"))
 hl.bind("SUPER + Return", hl.dsp.exec_cmd(terminal))
 hl.bind("SUPER + E", hl.dsp.exec_cmd(fileManager))
 hl.bind("SUPER + B", hl.dsp.exec_cmd(browser))
 
 -- ── Noctalia Shell ────────────────────────────
-hl.bind("SUPER + S", ipc("controlCenter toggle"))
-hl.bind("SUPER + comma", ipc("settings toggle"))
-hl.bind("SUPER + N", ipc("notifications toggleHistory"))
-hl.bind("SUPER + SHIFT + N", ipc("notifications toggleDND"))
-hl.bind("SUPER + W", ipc("desktopWidgets toggle"))
-hl.bind("SUPER + D", ipc("dock toggle"))
-hl.bind("SUPER + Escape", ipc("sessionMenu toggle"))
-hl.bind("SUPER + L", ipc("lockScreen lock"))
-hl.bind("SUPER + SHIFT + D", ipc("darkMode toggle"))
-hl.bind("SUPER + SHIFT + I", ipc("idleInhibitor toggle"))
-hl.bind("SUPER + SHIFT + W", ipc("wallpaper random"))
+hl.bind("SUPER + S", ipc("panel-toggle control-center"))
+hl.bind("SUPER + comma", ipc("settings-toggle"))
+hl.bind("SUPER + N", ipc("panel-toggle control-center notifications"))
+hl.bind("SUPER + SHIFT + N", ipc("notification-dnd-toggle"))
+hl.bind("SUPER + W", ipc("desktop-widgets-toggle"))
+hl.bind("SUPER + D", ipc("dock-toggle"))
+hl.bind("SUPER + Escape", ipc("panel-toggle session"))
+hl.bind("SUPER + L", ipc("session lock"))
+hl.bind("SUPER + SHIFT + D", ipc("theme-mode-toggle"))
+hl.bind("SUPER + SHIFT + I", ipc("caffeine-toggle"))
+hl.bind("SUPER + SHIFT + W", ipc("wallpaper-random"))
 
--- ── Launcher Modes ────────────────────────────
-hl.bind("SUPER + V", ipc("launcher clipboard"))
-hl.bind("SUPER + period", ipc("launcher emoji"))
-hl.bind("SUPER + Tab", ipc("launcher windows"))
+-- ── Launcher & Switcher ───────────────────────
+hl.bind("SUPER + V", ipc("panel-toggle clipboard"))
+hl.bind("SUPER + period", ipc('panel-toggle launcher "/emo "'))
+hl.bind("SUPER + Tab", ipc("window-switcher"))
 
 -- ── Window Management ─────────────────────────
 hl.bind("SUPER + Q", hl.dsp.window.close())
@@ -276,13 +276,13 @@ hl.bind("SUPER + mouse:272", hl.dsp.window.drag(), { mouse = true })
 hl.bind("SUPER + mouse:273", hl.dsp.window.resize(), { mouse = true })
 
 -- ── Media Keys ────────────────────────────────
-hl.bind("XF86AudioRaiseVolume", ipc("volume increase"), { repeating = true, locked = true })
-hl.bind("XF86AudioLowerVolume", ipc("volume decrease"), { repeating = true, locked = true })
-hl.bind("XF86AudioMute", ipc("volume muteOutput"), { locked = true })
-hl.bind("XF86AudioMicMute", ipc("volume muteInput"), { locked = true })
-hl.bind("XF86MonBrightnessUp", ipc("brightness increase"), { repeating = true, locked = true })
-hl.bind("XF86MonBrightnessDown", ipc("brightness decrease"), { repeating = true, locked = true })
-hl.bind("XF86AudioPlay", ipc("media playPause"), { locked = true })
+hl.bind("XF86AudioRaiseVolume", ipc("volume-up"), { repeating = true, locked = true })
+hl.bind("XF86AudioLowerVolume", ipc("volume-down"), { repeating = true, locked = true })
+hl.bind("XF86AudioMute", ipc("volume-mute"), { locked = true })
+hl.bind("XF86AudioMicMute", ipc("mic-mute"), { locked = true })
+hl.bind("XF86MonBrightnessUp", ipc("brightness-up"), { repeating = true, locked = true })
+hl.bind("XF86MonBrightnessDown", ipc("brightness-down"), { repeating = true, locked = true })
+hl.bind("XF86AudioPlay", ipc("media toggle"), { locked = true })
 hl.bind("XF86AudioNext", ipc("media next"), { locked = true })
 hl.bind("XF86AudioPrev", ipc("media previous"), { locked = true })
 
@@ -322,7 +322,7 @@ hl.bind("SUPER + CTRL + ALT + Print", grim("edit area", false))
 
 -- ── Noctalia Restart ──────────────────────────
 hl.bind("SUPER + SHIFT + R", function()
-  hl.exec_cmd("pkill quickshell; nohup qs -c noctalia-shell > /dev/null 2>&1 &")
+  hl.exec_cmd("pkill -x noctalia; nohup noctalia > /dev/null 2>&1 &")
 end)
 
 -- ──────────────────────────────────────────────
@@ -445,13 +445,21 @@ hl.window_rule({
   immediate = true,
 })
 
+-- ── Noctalia Window Rules ─────────────────────
+hl.window_rule({
+  name  = "noctalia-settings",
+  match = { class = "dev.noctalia.Noctalia" },
+  float = true,
+})
+
 -- ──────────────────────────────────────────────
 -- LAYER RULES
 -- ──────────────────────────────────────────────
 
 hl.layer_rule({
   name         = "noctalia",
-  match        = { namespace = "noctalia-background-.*$" },
+  match        = { namespace = "^noctalia-(bar-.+|notification|dock|panel|attached-panel|osd|window-switcher)$" },
+  no_anim      = true,
   ignore_alpha = 0.5,
   blur         = true,
   blur_popups  = true,
@@ -488,7 +496,7 @@ hl.on("monitor.removed", assign_workspaces)
 
 hl.on("hyprland.start", function()
   -- Shell / UI
-  hl.exec_cmd("qs -c noctalia-shell")
+  hl.exec_cmd("noctalia")
   hl.exec_cmd("hypridle")
 
   -- Wayland environment
