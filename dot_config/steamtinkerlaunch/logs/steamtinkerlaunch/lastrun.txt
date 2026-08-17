@@ -1,6 +1,0 @@
-RUNPROTON="/usr/share/steam/compatibilitytools.d/proton-cachyos-slr/proton"
-RUNWINE="/usr/share/steam/compatibilitytools.d/proton-cachyos-slr/files/bin/wine"
-PROTONVERSION="proton-cachyos-11.0-20260602 (steam linux runtime)"
-PREVAID="289650"
-PREVGAME="Assassin's Creed Unity"
-PREVABSGAMEEXEPATH="/home/albetnv/.local/share/Steam/steamapps/common/Assassin's Creed Unity/ACU.exe"
